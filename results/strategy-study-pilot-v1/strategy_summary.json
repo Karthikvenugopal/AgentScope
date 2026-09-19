@@ -1,0 +1,167 @@
+{
+  "parallel2-codex": {
+    "all_runs": {
+      "provider_tool_calls": {
+        "mean": 14.5,
+        "median": 14.5,
+        "p25": 12.25,
+        "p75": 16.75
+      },
+      "task_wall_time_ms": {
+        "mean": 78602.2441664827,
+        "median": 78602.2441664827,
+        "p25": 65026.690520724514,
+        "p75": 92177.7978122409
+      },
+      "total_tokens": {
+        "mean": 218520.5,
+        "median": 218520.5,
+        "p25": 195480.75,
+        "p75": 241560.25
+      }
+    },
+    "benchmark_successes": 2,
+    "efficiency": {
+      "provider_invocations_per_success": 4.0,
+      "tokens_per_success": 218520.5,
+      "wall_time_ms_per_success": 78602.2441664827
+    },
+    "mean_task_success_probability": 1.0,
+    "success_bootstrap_95_ci": [
+      1.0,
+      1.0
+    ],
+    "successful_runs_only": {
+      "provider_tool_calls": {
+        "mean": 14.5,
+        "median": 14.5,
+        "p25": 12.25,
+        "p75": 16.75
+      },
+      "task_wall_time_ms": {
+        "mean": 78602.2441664827,
+        "median": 78602.2441664827,
+        "p25": 65026.690520724514,
+        "p75": 92177.7978122409
+      },
+      "total_tokens": {
+        "mean": 218520.5,
+        "median": 218520.5,
+        "p25": 195480.75,
+        "p75": 241560.25
+      }
+    },
+    "task_count": 2,
+    "valid_runs": 2
+  },
+  "single-codex": {
+    "all_runs": {
+      "provider_tool_calls": {
+        "mean": 4.5,
+        "median": 4.5,
+        "p25": 4.25,
+        "p75": 4.75
+      },
+      "task_wall_time_ms": {
+        "mean": 28362.184041994624,
+        "median": 28362.184041994624,
+        "p25": 24346.66241699597,
+        "p75": 32377.70566699328
+      },
+      "total_tokens": {
+        "mean": 67163.0,
+        "median": 67163.0,
+        "p25": 63086.0,
+        "p75": 71240.0
+      }
+    },
+    "benchmark_successes": 2,
+    "efficiency": {
+      "provider_invocations_per_success": 1.0,
+      "tokens_per_success": 67163.0,
+      "wall_time_ms_per_success": 28362.184041994624
+    },
+    "mean_task_success_probability": 1.0,
+    "success_bootstrap_95_ci": [
+      1.0,
+      1.0
+    ],
+    "successful_runs_only": {
+      "provider_tool_calls": {
+        "mean": 4.5,
+        "median": 4.5,
+        "p25": 4.25,
+        "p75": 4.75
+      },
+      "task_wall_time_ms": {
+        "mean": 28362.184041994624,
+        "median": 28362.184041994624,
+        "p25": 24346.66241699597,
+        "p75": 32377.70566699328
+      },
+      "total_tokens": {
+        "mean": 67163.0,
+        "median": 67163.0,
+        "p25": 63086.0,
+        "p75": 71240.0
+      }
+    },
+    "task_count": 2,
+    "valid_runs": 2
+  },
+  "staged-codex": {
+    "all_runs": {
+      "provider_tool_calls": {
+        "mean": 7.5,
+        "median": 7.5,
+        "p25": 6.75,
+        "p75": 8.25
+      },
+      "task_wall_time_ms": {
+        "mean": 62950.37843802129,
+        "median": 62950.37843802129,
+        "p25": 53044.22849002003,
+        "p75": 72856.52838602255
+      },
+      "total_tokens": {
+        "mean": 127109.5,
+        "median": 127109.5,
+        "p25": 116782.25,
+        "p75": 137436.75
+      }
+    },
+    "benchmark_successes": 2,
+    "efficiency": {
+      "provider_invocations_per_success": 3.0,
+      "tokens_per_success": 127109.5,
+      "wall_time_ms_per_success": 62950.37843802129
+    },
+    "mean_task_success_probability": 1.0,
+    "success_bootstrap_95_ci": [
+      1.0,
+      1.0
+    ],
+    "successful_runs_only": {
+      "provider_tool_calls": {
+        "mean": 7.5,
+        "median": 7.5,
+        "p25": 6.75,
+        "p75": 8.25
+      },
+      "task_wall_time_ms": {
+        "mean": 62950.37843802129,
+        "median": 62950.37843802129,
+        "p25": 53044.22849002003,
+        "p75": 72856.52838602255
+      },
+      "total_tokens": {
+        "mean": 127109.5,
+        "median": 127109.5,
+        "p25": 116782.25,
+        "p75": 137436.75
+      }
+    },
+    "task_count": 2,
+    "valid_runs": 2
+  }
+}

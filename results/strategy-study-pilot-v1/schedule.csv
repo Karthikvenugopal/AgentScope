@@ -1,0 +1,7 @@
+scheduled_order,task_id,configuration_id,repetition,status,valid_run_id,attempt_count
+1,incorrect_api_response,staged-codex,1,completed,strategy-study-pilot-v1-001-a1,1
+2,incorrect_api_response,parallel2-codex,1,completed,strategy-study-pilot-v1-002-a1,1
+3,incorrect_api_response,single-codex,1,completed,strategy-study-pilot-v1-003-a1,1
+4,cache_invalidation,single-codex,1,completed,strategy-study-pilot-v1-004-a1,1
+5,cache_invalidation,staged-codex,1,completed,strategy-study-pilot-v1-005-a1,1
+6,cache_invalidation,parallel2-codex,1,completed,strategy-study-pilot-v1-006-a1,1

@@ -1,0 +1,116 @@
+{
+  "parallel2-codex_minus_single-codex": {
+    "official_success": {
+      "bootstrap_95_ci": [
+        0.0,
+        0.0
+      ],
+      "mean_difference": 0.0,
+      "median_difference": 0.0,
+      "paired_task_count": 2
+    },
+    "provider_tool_calls": {
+      "bootstrap_95_ci": [
+        6.0,
+        14.0
+      ],
+      "mean_difference": 10.0,
+      "median_difference": 10.0,
+      "paired_task_count": 2
+    },
+    "task_wall_time_ms": {
+      "bootstrap_95_ci": [
+        31119.99608296901,
+        69360.12416600715
+      ],
+      "mean_difference": 50240.06012448808,
+      "median_difference": 50240.06012448808,
+      "paired_task_count": 2
+    },
+    "total_tokens": {
+      "bootstrap_95_ci": [
+        113432.0,
+        189283.0
+      ],
+      "mean_difference": 151357.5,
+      "median_difference": 151357.5,
+      "paired_task_count": 2
+    }
+  },
+  "parallel2-codex_minus_staged-codex": {
+    "official_success": {
+      "bootstrap_95_ci": [
+        0.0,
+        0.0
+      ],
+      "mean_difference": 0.0,
+      "median_difference": 0.0,
+      "paired_task_count": 2
+    },
+    "provider_tool_calls": {
+      "bootstrap_95_ci": [
+        4.0,
+        10.0
+      ],
+      "mean_difference": 7.0,
+      "median_difference": 7.0,
+      "paired_task_count": 2
+    },
+    "task_wall_time_ms": {
+      "bootstrap_95_ci": [
+        8313.058332947548,
+        22990.673123975284
+      ],
+      "mean_difference": 15651.865728461416,
+      "median_difference": 15651.865728461416,
+      "paired_task_count": 2
+    },
+    "total_tokens": {
+      "bootstrap_95_ci": [
+        65986.0,
+        116836.0
+      ],
+      "mean_difference": 91411.0,
+      "median_difference": 91411.0,
+      "paired_task_count": 2
+    }
+  },
+  "single-codex_minus_staged-codex": {
+    "official_success": {
+      "bootstrap_95_ci": [
+        0.0,
+        0.0
+      ],
+      "mean_difference": 0.0,
+      "median_difference": 0.0,
+      "paired_task_count": 2
+    },
+    "provider_tool_calls": {
+      "bootstrap_95_ci": [
+        -4.0,
+        -2.0
+      ],
+      "mean_difference": -3.0,
+      "median_difference": -3.0,
+      "paired_task_count": 2
+    },
+    "task_wall_time_ms": {
+      "bootstrap_95_ci": [
+        -46369.45104203187,
+        -22806.93775002146
+      ],
+      "mean_difference": -34588.194396026665,
+      "median_difference": -34588.194396026665,
+      "paired_task_count": 2
+    },
+    "total_tokens": {
+      "bootstrap_95_ci": [
+        -72447.0,
+        -47446.0
+      ],
+      "mean_difference": -59946.5,
+      "median_difference": -59946.5,
+      "paired_task_count": 2
+    }
+  }
+}

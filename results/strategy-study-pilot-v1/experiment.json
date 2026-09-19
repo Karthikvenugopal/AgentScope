@@ -1,0 +1,183 @@
+{
+  "benchmark_manifest_hash": "132a2070b12f143d889a2b88af200063800194162835bbdd3eea01aef8f38f80",
+  "benchmark_name": "AgentScope Benchmark",
+  "benchmark_version": "0.1",
+  "configurations": [
+    {
+      "configuration": {
+        "id": "parallel2-codex",
+        "implementer": "codex",
+        "implementer_count": 2,
+        "model": null,
+        "planner": "codex",
+        "provider": "codex",
+        "reviewer": "codex",
+        "strategy": "parallel_implementers"
+      },
+      "configuration_id": "parallel2-codex",
+      "experiment_id": "strategy-study-pilot-v1",
+      "provider": "codex",
+      "strategy": "parallel_implementers"
+    },
+    {
+      "configuration": {
+        "id": "single-codex",
+        "implementer": null,
+        "implementer_count": null,
+        "model": null,
+        "planner": null,
+        "provider": "codex",
+        "reviewer": null,
+        "strategy": "single"
+      },
+      "configuration_id": "single-codex",
+      "experiment_id": "strategy-study-pilot-v1",
+      "provider": "codex",
+      "strategy": "single"
+    },
+    {
+      "configuration": {
+        "id": "staged-codex",
+        "implementer": "codex",
+        "implementer_count": null,
+        "model": null,
+        "planner": "codex",
+        "provider": "codex",
+        "reviewer": "codex",
+        "strategy": "planner_implementer_reviewer"
+      },
+      "configuration_id": "staged-codex",
+      "experiment_id": "strategy-study-pilot-v1",
+      "provider": "codex",
+      "strategy": "planner_implementer_reviewer"
+    }
+  ],
+  "created_at": "2026-09-18T22:15:00+00:00",
+  "experiment_id": "strategy-study-pilot-v1",
+  "finished_at": "2026-09-18T22:44:04.489315+00:00",
+  "name": "Phase 9 strategy study pilot v1",
+  "pause_reason": null,
+  "progress": {
+    "benchmark_failures": 0,
+    "benchmark_successes": 6,
+    "completed": 6,
+    "infrastructure_failures": 0,
+    "pending": 0,
+    "planned": 6,
+    "running": 0
+  },
+  "provenance": {
+    "agentscope_commit": null,
+    "agentscope_version": "0.9.0",
+    "benchmark_manifest_hash": "132a2070b12f143d889a2b88af200063800194162835bbdd3eea01aef8f38f80",
+    "benchmark_name": "AgentScope Benchmark",
+    "benchmark_version": "0.1",
+    "experiment_spec_hash": "5b35faed39ddb7cbb2c7cf452d3c972de19617717405e947642cba22fc881a6e",
+    "provider_image": "agentscope-providers:codex-0.154.0-claude-2.1.220",
+    "provider_image_id": "sha256:3f740c9524d9b3e4d65ea33a19d234b65c313841af6453ece2be7eef00f221c2",
+    "provider_versions": {
+      "codex": {
+        "available": true,
+        "capabilities": {
+          "model_request_boundaries": false,
+          "model_selection": true,
+          "per_request_usage": false,
+          "session_continuation": true,
+          "session_ids": true,
+          "streaming_events": true,
+          "structured_output": true,
+          "token_stream_timestamps": false,
+          "token_usage": true,
+          "tool_events": true
+        },
+        "id": "codex",
+        "reason": null,
+        "version": "codex-cli 0.154.0"
+      }
+    },
+    "runner_image": "agentscope-runner:py312",
+    "runner_image_id": "sha256:bf0d26dc5f789a36fda4dcc9daa046d524d168b8e22282c2b8e735edff6ebe24",
+    "strategy_implementation_hash": "1c80ad326619127099c8089f9fcb14411d143626bc59900cfb39231d3b60d5b4",
+    "task_count": 12,
+    "task_hashes": {
+      "cache_invalidation": "4fd7bda60b5e613ae0e051f3c89bc5149654f540f4ae9cd4cc1bf69dccd9f5c5",
+      "incorrect_api_response": "788098aa3138b2b1bde0a18b76c24bd1532fbf9094a00d9531febdf14e366484"
+    }
+  },
+  "random_seed": 20260918,
+  "research_question": "Does the frozen strategy-study schedule, telemetry, isolation, persistence, and analysis pipeline operate correctly before the full matrix?",
+  "spec": {
+    "benchmark_manifest_hash": "132a2070b12f143d889a2b88af200063800194162835bbdd3eea01aef8f38f80",
+    "benchmark_name": "AgentScope Benchmark",
+    "benchmark_version": "0.1",
+    "bootstrap_seed": 20260919,
+    "budget": {
+      "max_estimated_cost": null,
+      "max_provider_invocations": 18,
+      "max_tokens": 5000000,
+      "max_total_runs": 6
+    },
+    "configurations": [
+      {
+        "id": "single-codex",
+        "implementer": null,
+        "implementer_count": null,
+        "model": null,
+        "planner": null,
+        "provider": "codex",
+        "reviewer": null,
+        "strategy": "single"
+      },
+      {
+        "id": "staged-codex",
+        "implementer": "codex",
+        "implementer_count": null,
+        "model": null,
+        "planner": "codex",
+        "provider": "codex",
+        "reviewer": "codex",
+        "strategy": "planner_implementer_reviewer"
+      },
+      {
+        "id": "parallel2-codex",
+        "implementer": "codex",
+        "implementer_count": 2,
+        "model": null,
+        "planner": "codex",
+        "provider": "codex",
+        "reviewer": "codex",
+        "strategy": "parallel_implementers"
+      }
+    ],
+    "created_at": "2026-09-18T15:15:00-07:00",
+    "execution_order": "stratified_random",
+    "experiment_id": "strategy-study-pilot-v1",
+    "experiment_run_concurrency": 1,
+    "infrastructure_backoff_seconds": 10.0,
+    "infrastructure_retry_limit": 2,
+    "limits": {
+      "command_timeout_seconds": 120.0,
+      "max_agent_turns": 20,
+      "max_captured_output_bytes": 1000000,
+      "max_file_write_bytes": 1000000,
+      "max_tool_calls": 100,
+      "overall_timeout_seconds": 900.0
+    },
+    "name": "Phase 9 strategy study pilot v1",
+    "notes": "Infrastructure pilot only. Results do not modify the full-study methodology.",
+    "provider_requirements": [
+      "codex"
+    ],
+    "random_seed": 20260918,
+    "repetitions": 1,
+    "research_question": "Does the frozen strategy-study schedule, telemetry, isolation, persistence, and analysis pipeline operate correctly before the full matrix?",
+    "schema_version": "1",
+    "task_ids": [
+      "incorrect_api_response",
+      "cache_invalidation"
+    ]
+  },
+  "spec_hash": "5b35faed39ddb7cbb2c7cf452d3c972de19617717405e947642cba22fc881a6e",
+  "started_at": "2026-09-18T22:38:24.429568+00:00",
+  "status": "completed"
+}
