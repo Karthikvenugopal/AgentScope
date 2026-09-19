@@ -1,0 +1,62 @@
+id: terminal-bench.query-optimize
+title: Evaluates the ability to optimize a slow SQL query with correlated subqueries
+  by rewriting it using CTEs and window functions while preserving exact output.
+description: "You are given the Open English Wordnet (OEWN) database in SQLite format,\
+  \ located at /workspace/oewn.sqlite.\n\nI implemented a sql query but it is not\
+  \ optimized. I have saved it in /workspace/my-sql-query.sql. Please make the query\
+  \ as efficient as possible while ensuring that the same output is produced.\n\n\n\
+  \  Do not modify the database file in any way. Please save your solution in the\
+  \ file /workspace/sol.sql. This file must contain no comments, just one single sql\
+  \ query terminated by a semicolon.\n\n  Finally, please use sqlite syntax! Your\
+  \ code will not execute in sqlite if you use other dialects.\n\nAgentScope path\
+  \ mapping: Harbor's /app is the agent-visible /workspace directory."
+repository:
+  type: local
+  source: fixtures/terminal-bench.query-optimize
+test_command: python -m pytest -q
+timeout_seconds: 900
+expected_behavior: Evaluates the ability to optimize a slow SQL query with correlated
+  subqueries by rewriting it using CTEs and window functions while preserving exact
+  output.
+version: '1.1'
+tags:
+- query-optimization
+- sql-query
+- harbor
+- terminal-bench/terminal-bench-2-1
+language: SQL
+difficulty: medium
+provenance:
+  source: harbor
+  dataset: terminal-bench/terminal-bench-2-1
+  dataset_version: 2.1@6
+  source_task_id: terminal-bench/query-optimize
+  source_version: 2.1@6
+  task_hash: 1c237d1dda935ad8756729ce988cac1f32b779c2d0cd131327eb14ba7e5d3366
+  environment_hash: 25d75a998a83e0c7f35d7824877523eee71c88a5982b6b20258436082179321f
+  verifier_hash: 47627b6271b3f0ff94e2db207e7e575c9932cf1c3a72bcff1f0fdc472a4ed81a
+  imported_at: '2026-09-18T12:00:00-07:00'
+  harbor_version: 0.23.0
+  harbor_schema_version: '1.1'
+  source_metadata:
+    upstream_commit: 7131e4375048a0e408a8fb404b5f499d726b695b
+    author_name: Shreyas Pimpalgaonkar
+    author_email: shreyas@bespokelabs.ai
+    difficulty: medium
+    category: data-science
+    tags:
+    - query-optimization
+    - sql-query
+    expert_time_estimate_min: 60.0
+    junior_time_estimate_min: 480.0
+environment:
+  kind: harbor
+  image: alexgshaw/query-optimize:20251031
+  workdir: /app
+  build_timeout_seconds: 600.0
+  network_mode: public
+verification:
+  source: harbor/terminal-bench-terminal-bench-2-1/query-optimize/tests
+  timeout_seconds: 1800.0
+  kind: harbor
+  command: test.sh
