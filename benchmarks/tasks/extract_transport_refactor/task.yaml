@@ -1,0 +1,30 @@
+id: extract_transport_refactor
+title: Extract a transport abstraction
+description: Remove duplicated webhook delivery code while preserving headers, serialization,
+  and errors.
+repository:
+  type: local
+  source: fixtures/extract_transport_refactor
+setup_command: null
+test_command: python -m pytest -q
+timeout_seconds: 120
+expected_behavior: Email and audit clients share a Transport without behavioral changes.
+version: 1.0.0
+language: Python
+difficulty: medium
+tags:
+- refactoring
+- abstraction
+- cross-file
+provenance:
+  source: agentscope
+  dataset: AgentScope Benchmark
+  dataset_version: '0.1'
+  source_task_id: extract_transport_refactor
+  task_hash: fb5471ea2eedef2075f5dfe369eb2b5d5499d64aa62c1bdffb3461cbe34218a1
+  environment_hash: ba682a8f34ece4a05dfb9b4484bfcb94ed0dc7596457eec9bd156a7a27b236f8
+  verifier_hash: dfa1618ee12065e428aeb3c2d2de0f768d0c1edf7430d55098d6e7136c187082
+verification:
+  source: verification/extract_transport_refactor
+  timeout_seconds: 45
+  kind: pytest

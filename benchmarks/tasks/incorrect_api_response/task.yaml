@@ -1,0 +1,29 @@
+id: incorrect_api_response
+title: Fix the health response
+description: The status endpoint helper returns a payload that violates the documented
+  API contract. Correct the implementation without changing its public function.
+repository:
+  type: local
+  source: fixtures/incorrect_api_response
+setup_command: null
+test_command: python -m pytest -q
+timeout_seconds: 120
+expected_behavior: 'status_response returns exactly {"status": "ok"}.'
+version: '2'
+verification:
+  source: verification/incorrect_api_response
+  timeout_seconds: 30
+tags:
+- python
+- api
+- bugfix
+language: Python
+difficulty: easy
+provenance:
+  source: agentscope
+  dataset: AgentScope Benchmark
+  dataset_version: '0.1'
+  source_task_id: incorrect_api_response
+  task_hash: 788098aa3138b2b1bde0a18b76c24bd1532fbf9094a00d9531febdf14e366484
+  environment_hash: c6e794f3d0001c72d124b0ce30c1c976165b14f0115dceff138909bba34ef8cb
+  verifier_hash: 68b0315c5116d6c44ec1330107487ca5f480323f78a10eaaace07b283b8baa78
