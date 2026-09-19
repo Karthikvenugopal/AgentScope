@@ -1,0 +1,152 @@
+{
+  "candidate_count": 2,
+  "events": [
+    {
+      "candidate_id": null,
+      "event_type": "strategy_started",
+      "execution_id": null,
+      "parent_execution_id": null,
+      "role": null,
+      "sequence": 4,
+      "timestamp": "2026-09-18T23:28:59.481763Z"
+    },
+    {
+      "candidate_id": null,
+      "event_type": "planner_started",
+      "execution_id": "bf7f169d1c2655c3a8fd53273994534c",
+      "parent_execution_id": "strategy-study-v1-016-a1",
+      "role": "planner",
+      "sequence": 5,
+      "timestamp": "2026-09-18T23:28:59.481848Z"
+    },
+    {
+      "candidate_id": null,
+      "event_type": "planner_completed",
+      "execution_id": "bf7f169d1c2655c3a8fd53273994534c",
+      "parent_execution_id": "strategy-study-v1-016-a1",
+      "role": "planner",
+      "sequence": 16,
+      "timestamp": "2026-09-18T23:29:14.908506Z"
+    },
+    {
+      "candidate_id": null,
+      "event_type": "parallel_group_started",
+      "execution_id": null,
+      "parent_execution_id": null,
+      "role": null,
+      "sequence": 17,
+      "timestamp": "2026-09-18T23:29:14.908616Z"
+    },
+    {
+      "candidate_id": "A",
+      "event_type": "parallel_candidate_started",
+      "execution_id": "65e3882b8fcd573db4ad682bad0a7a49",
+      "parent_execution_id": "strategy-study-v1-016-a1",
+      "role": "implementer",
+      "sequence": 18,
+      "timestamp": "2026-09-18T23:29:14.908705Z"
+    },
+    {
+      "candidate_id": "B",
+      "event_type": "parallel_candidate_started",
+      "execution_id": "6d5fb2ecab435efc9daf6da97f5cac22",
+      "parent_execution_id": "strategy-study-v1-016-a1",
+      "role": "implementer",
+      "sequence": 20,
+      "timestamp": "2026-09-18T23:29:14.908746Z"
+    },
+    {
+      "candidate_id": "A",
+      "event_type": "parallel_candidate_completed",
+      "execution_id": "65e3882b8fcd573db4ad682bad0a7a49",
+      "parent_execution_id": "strategy-study-v1-016-a1",
+      "role": "implementer",
+      "sequence": 45,
+      "timestamp": "2026-09-18T23:29:28.627012Z"
+    },
+    {
+      "candidate_id": "B",
+      "event_type": "parallel_candidate_completed",
+      "execution_id": "6d5fb2ecab435efc9daf6da97f5cac22",
+      "parent_execution_id": "strategy-study-v1-016-a1",
+      "role": "implementer",
+      "sequence": 53,
+      "timestamp": "2026-09-18T23:29:35.832987Z"
+    },
+    {
+      "candidate_id": null,
+      "event_type": "reviewer_started",
+      "execution_id": "a0582f34ee9d5c9b9397680a90d6af6b",
+      "parent_execution_id": "strategy-study-v1-016-a1",
+      "role": "reviewer",
+      "sequence": 54,
+      "timestamp": "2026-09-18T23:29:35.833194Z"
+    },
+    {
+      "candidate_id": null,
+      "event_type": "reviewer_completed",
+      "execution_id": "a0582f34ee9d5c9b9397680a90d6af6b",
+      "parent_execution_id": "strategy-study-v1-016-a1",
+      "role": "reviewer",
+      "sequence": 60,
+      "timestamp": "2026-09-18T23:29:42.650329Z"
+    },
+    {
+      "candidate_id": null,
+      "event_type": "candidate_selected",
+      "execution_id": null,
+      "parent_execution_id": null,
+      "role": null,
+      "sequence": 61,
+      "timestamp": "2026-09-18T23:29:42.650421Z"
+    },
+    {
+      "candidate_id": null,
+      "event_type": "strategy_completed",
+      "execution_id": null,
+      "parent_execution_id": null,
+      "role": null,
+      "sequence": 62,
+      "timestamp": "2026-09-18T23:29:42.650488Z"
+    },
+    {
+      "candidate_id": null,
+      "event_type": "verification_started",
+      "execution_id": null,
+      "parent_execution_id": null,
+      "role": null,
+      "sequence": 65,
+      "timestamp": "2026-09-18T23:29:42.718448Z"
+    },
+    {
+      "candidate_id": null,
+      "event_type": "verification_completed",
+      "execution_id": null,
+      "parent_execution_id": null,
+      "role": null,
+      "sequence": 66,
+      "timestamp": "2026-09-18T23:29:43.222456Z"
+    },
+    {
+      "candidate_id": null,
+      "event_type": "run_completed",
+      "execution_id": null,
+      "parent_execution_id": null,
+      "role": null,
+      "sequence": 67,
+      "timestamp": "2026-09-18T23:29:43.224613Z"
+    }
+  ],
+  "official_verification": {
+    "passed": true,
+    "passed_tests": 3,
+    "total_tests": 3
+  },
+  "run_id": "strategy-study-v1-016-a1",
+  "selected_candidate": "A",
+  "source_run_sha256": "3ba1a431dcd91f6f5aa93813607edbd4d4c5d0ee62c52ed32dd4f24978d937c5",
+  "source_trace_sha256": "a9a53c2a69a0e4e4657db554839d4396d619647ebc8aa83f6a85a3467821fa55",
+  "status": "completed",
+  "strategy": "parallel_implementers",
+  "task_id": "incorrect_api_response"
+}

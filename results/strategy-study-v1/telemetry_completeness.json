@@ -1,0 +1,247 @@
+{
+  "definition": "A run is complete only when measured total_tokens is non-null.",
+  "finding": "All 21 missing token observations were benchmark failures: 19 strategy timeouts and 2 provider API failures. Every official success had token telemetry.",
+  "missing_values_are_not_zero": true,
+  "strategies": {
+    "parallel2-codex": {
+      "by_outcome": {
+        "official_success": {
+          "runs": 15,
+          "token_complete": 15,
+          "token_missing": 0
+        },
+        "official_verification_failure": {
+          "runs": 7,
+          "token_complete": 7,
+          "token_missing": 0
+        },
+        "provider_api_failure": {
+          "runs": 1,
+          "token_complete": 0,
+          "token_missing": 1
+        },
+        "strategy_timeout": {
+          "runs": 13,
+          "token_complete": 4,
+          "token_missing": 9
+        }
+      },
+      "completeness_fraction": 0.7222222222222222,
+      "missing_causes": {
+        "provider_api_failure": 1,
+        "strategy_timeout": 9
+      },
+      "missing_runs": [
+        {
+          "candidate_failures": 0,
+          "cause": "strategy_timeout",
+          "provider_invocations": 4,
+          "run_id": "strategy-study-v1-003-a1",
+          "task_id": "transaction_transition"
+        },
+        {
+          "candidate_failures": 0,
+          "cause": "strategy_timeout",
+          "provider_invocations": 4,
+          "run_id": "strategy-study-v1-010-a1",
+          "task_id": "cache_invalidation"
+        },
+        {
+          "candidate_failures": 0,
+          "cause": "strategy_timeout",
+          "provider_invocations": 1,
+          "run_id": "strategy-study-v1-035-a1",
+          "task_id": "extract_transport_refactor"
+        },
+        {
+          "candidate_failures": 1,
+          "cause": "strategy_timeout",
+          "provider_invocations": 3,
+          "run_id": "strategy-study-v1-039-a1",
+          "task_id": "extract_transport_refactor"
+        },
+        {
+          "candidate_failures": 0,
+          "cause": "strategy_timeout",
+          "provider_invocations": 4,
+          "run_id": "strategy-study-v1-040-a1",
+          "task_id": "js_ttl_cache"
+        },
+        {
+          "candidate_failures": 0,
+          "cause": "provider_api_failure",
+          "provider_invocations": 1,
+          "run_id": "strategy-study-v1-044-a1",
+          "task_id": "bounded_retry"
+        },
+        {
+          "candidate_failures": 0,
+          "cause": "strategy_timeout",
+          "provider_invocations": 4,
+          "run_id": "strategy-study-v1-050-a1",
+          "task_id": "js_batch_dedupe"
+        },
+        {
+          "candidate_failures": 0,
+          "cause": "strategy_timeout",
+          "provider_invocations": 4,
+          "run_id": "strategy-study-v1-055-a1",
+          "task_id": "transaction_transition"
+        },
+        {
+          "candidate_failures": 1,
+          "cause": "strategy_timeout",
+          "provider_invocations": 3,
+          "run_id": "strategy-study-v1-077-a1",
+          "task_id": "extract_transport_refactor"
+        },
+        {
+          "candidate_failures": 0,
+          "cause": "strategy_timeout",
+          "provider_invocations": 4,
+          "run_id": "strategy-study-v1-097-a1",
+          "task_id": "js_ttl_cache"
+        }
+      ],
+      "token_complete": 26,
+      "token_missing": 10,
+      "valid_runs": 36
+    },
+    "single-codex": {
+      "by_outcome": {
+        "official_success": {
+          "runs": 21,
+          "token_complete": 21,
+          "token_missing": 0
+        },
+        "official_verification_failure": {
+          "runs": 14,
+          "token_complete": 14,
+          "token_missing": 0
+        },
+        "provider_api_failure": {
+          "runs": 1,
+          "token_complete": 1,
+          "token_missing": 0
+        }
+      },
+      "completeness_fraction": 1.0,
+      "missing_causes": {},
+      "missing_runs": [],
+      "token_complete": 36,
+      "token_missing": 0,
+      "valid_runs": 36
+    },
+    "staged-codex": {
+      "by_outcome": {
+        "official_success": {
+          "runs": 15,
+          "token_complete": 15,
+          "token_missing": 0
+        },
+        "official_verification_failure": {
+          "runs": 8,
+          "token_complete": 8,
+          "token_missing": 0
+        },
+        "provider_api_failure": {
+          "runs": 2,
+          "token_complete": 1,
+          "token_missing": 1
+        },
+        "strategy_timeout": {
+          "runs": 11,
+          "token_complete": 1,
+          "token_missing": 10
+        }
+      },
+      "completeness_fraction": 0.6944444444444444,
+      "missing_causes": {
+        "provider_api_failure": 1,
+        "strategy_timeout": 10
+      },
+      "missing_runs": [
+        {
+          "candidate_failures": 0,
+          "cause": "strategy_timeout",
+          "provider_invocations": 3,
+          "run_id": "strategy-study-v1-007-a1",
+          "task_id": "cursor_pagination"
+        },
+        {
+          "candidate_failures": 1,
+          "cause": "strategy_timeout",
+          "provider_invocations": 2,
+          "run_id": "strategy-study-v1-037-a1",
+          "task_id": "extract_transport_refactor"
+        },
+        {
+          "candidate_failures": 1,
+          "cause": "strategy_timeout",
+          "provider_invocations": 2,
+          "run_id": "strategy-study-v1-041-a1",
+          "task_id": "js_ttl_cache"
+        },
+        {
+          "candidate_failures": 0,
+          "cause": "provider_api_failure",
+          "provider_invocations": 1,
+          "run_id": "strategy-study-v1-049-a1",
+          "task_id": "js_batch_dedupe"
+        },
+        {
+          "candidate_failures": 0,
+          "cause": "strategy_timeout",
+          "provider_invocations": 3,
+          "run_id": "strategy-study-v1-056-a1",
+          "task_id": "transaction_transition"
+        },
+        {
+          "candidate_failures": 0,
+          "cause": "strategy_timeout",
+          "provider_invocations": 3,
+          "run_id": "strategy-study-v1-066-a1",
+          "task_id": "request_validation"
+        },
+        {
+          "candidate_failures": 1,
+          "cause": "strategy_timeout",
+          "provider_invocations": 4,
+          "run_id": "strategy-study-v1-068-a1",
+          "task_id": "resource_cleanup"
+        },
+        {
+          "candidate_failures": 1,
+          "cause": "strategy_timeout",
+          "provider_invocations": 2,
+          "run_id": "strategy-study-v1-086-a1",
+          "task_id": "transaction_transition"
+        },
+        {
+          "candidate_failures": 1,
+          "cause": "strategy_timeout",
+          "provider_invocations": 2,
+          "run_id": "strategy-study-v1-095-a1",
+          "task_id": "request_validation"
+        },
+        {
+          "candidate_failures": 1,
+          "cause": "strategy_timeout",
+          "provider_invocations": 2,
+          "run_id": "strategy-study-v1-099-a1",
+          "task_id": "js_ttl_cache"
+        },
+        {
+          "candidate_failures": 0,
+          "cause": "strategy_timeout",
+          "provider_invocations": 3,
+          "run_id": "strategy-study-v1-102-a1",
+          "task_id": "js_batch_dedupe"
+        }
+      ],
+      "token_complete": 25,
+      "token_missing": 11,
+      "valid_runs": 36
+    }
+  }
+}

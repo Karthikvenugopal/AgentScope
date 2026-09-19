@@ -1,0 +1,32 @@
+{
+  "failure_modes": {
+    "parallel2-codex": {
+      "official_success": 15,
+      "official_verification_failure": 7,
+      "provider_api_failure": 1,
+      "strategy_timeout": 13
+    },
+    "single-codex": {
+      "official_success": 21,
+      "official_verification_failure": 14,
+      "provider_api_failure": 1
+    },
+    "staged-codex": {
+      "official_success": 15,
+      "official_verification_failure": 8,
+      "provider_api_failure": 2,
+      "strategy_timeout": 11
+    }
+  },
+  "interpretation_boundary": "Patch equality is textual equality only; unselected candidates were not officially verified, so diversity is not a quality comparison.",
+  "parallel_patch_diversity": {
+    "different_nonempty_patches": 20,
+    "identical_nonempty_patches": 11,
+    "no_selection": 12,
+    "runs": 36,
+    "runs_with_two_completed_candidates": 31,
+    "runs_with_two_implementer_records": 34,
+    "selected_A": 18,
+    "selected_B": 6
+  }
+}
