@@ -1,0 +1,30 @@
+id: cache_invalidation
+title: Fix tenant cache invalidation
+description: Ensure profile updates invalidate exactly the affected tenant/user cache
+  entry.
+repository:
+  type: local
+  source: fixtures/cache_invalidation
+setup_command: null
+test_command: python -m pytest -q
+timeout_seconds: 120
+expected_behavior: Reads never return stale profiles and other tenants remain cached.
+version: 1.0.0
+language: Python
+difficulty: medium
+tags:
+- cache
+- state
+- multi-tenant
+provenance:
+  source: agentscope
+  dataset: AgentScope Benchmark
+  dataset_version: '0.1'
+  source_task_id: cache_invalidation
+  task_hash: 4fd7bda60b5e613ae0e051f3c89bc5149654f540f4ae9cd4cc1bf69dccd9f5c5
+  environment_hash: 092c08dc3e4e6e3ae6424b679448fd8fd71c869587e037002e62caaa0a3cae75
+  verifier_hash: 86a461a05bff972b372d4f40f547a37842671ac7584b9f6f4ff32063e19e4aec
+verification:
+  source: verification/cache_invalidation
+  timeout_seconds: 45
+  kind: pytest

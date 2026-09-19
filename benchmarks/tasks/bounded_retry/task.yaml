@@ -1,0 +1,30 @@
+id: bounded_retry
+title: Add bounded retry policy
+description: Retry transient delivery failures with bounded exponential delays and
+  no retry for permanent errors.
+repository:
+  type: local
+  source: fixtures/bounded_retry
+setup_command: null
+test_command: python -m pytest -q
+timeout_seconds: 120
+expected_behavior: At most max_attempts occur; only TransientError is retried.
+version: 1.0.0
+language: Python
+difficulty: medium
+tags:
+- retry
+- reliability
+- timeouts
+provenance:
+  source: agentscope
+  dataset: AgentScope Benchmark
+  dataset_version: '0.1'
+  source_task_id: bounded_retry
+  task_hash: 07df7bf97affa23de0836be277033ea144f0a33019d55b121ee1eced33d6c5ee
+  environment_hash: a9b502ba214d9634820482e4876126e0ceef5c662a87f4b9af9ffc932322716c
+  verifier_hash: 476864732f9258e0aa2202c1d7367ed2b02b7857e350c05414a3f9e9bde21591
+verification:
+  source: verification/bounded_retry
+  timeout_seconds: 45
+  kind: pytest
