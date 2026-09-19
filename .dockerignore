@@ -1,0 +1,15 @@
+.git
+.env
+.env.*
+*auth*.json
+!docker/disabled-auth.json
+.venv
+**/__pycache__
+**/.pytest_cache
+frontend/node_modules
+artifacts
+.agentscope-workspaces
+postgres-data
+.postgres
+results
+docs
