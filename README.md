@@ -261,7 +261,4 @@ python -m pytest backend/tests
 - [Provider integration and telemetry](docs/phase6.md)
 - [Trace format](docs/trace-format.md)
 - [Controlled tools](docs/controlled-tools.md)
-- [Resume-ready project summary](docs/resume-summary.md)
-
-Apache-2.0 licensed. The repository has no verified Git remote in this workspace, so
-this README intentionally does not invent a public repository URL or commit ID.
+Apache-2.0 licensed.
