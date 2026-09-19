@@ -1,0 +1,94 @@
+name: agentscope
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-agentscope}
+      POSTGRES_USER: ${POSTGRES_USER:-agentscope}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in .env}
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $$POSTGRES_USER -d $$POSTGRES_DB"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+    ports:
+      - "127.0.0.1:${POSTGRES_PORT:-5432}:5432"
+    volumes:
+      - agentscope-postgres:/var/lib/postgresql/data
+
+  runner-image:
+    profiles: ["build"]
+    build:
+      context: .
+      dockerfile: docker/agent-runner.Dockerfile
+    image: agentscope-runner:py312
+    command: ["python", "--version"]
+
+  provider-image:
+    profiles: ["build"]
+    build:
+      context: .
+      dockerfile: docker/provider.Dockerfile
+    image: agentscope-providers:codex-0.154.0-claude-2.1.220
+    command: ["codex", "--version"]
+
+  backend:
+    build:
+      context: .
+      dockerfile: docker/backend.Dockerfile
+    image: agentscope-api:local
+    cpus: ${API_CPUS:-2}
+    environment:
+      DATABASE_URL: ${COMPOSE_DATABASE_URL:-postgresql+psycopg://agentscope:REPLACE_ME@postgres:5432/agentscope}
+      BENCHMARK_ROOT: /app/benchmarks
+      ARTIFACT_ROOT: /app/artifacts
+      TMPDIR: ${AGENTSCOPE_WORKSPACE_ROOT:-/tmp/agentscope-workspaces}
+      MAX_CONCURRENT_RUNS: ${MAX_CONCURRENT_RUNS:-2}
+      MAX_PARALLEL_IMPLEMENTERS: ${MAX_PARALLEL_IMPLEMENTERS:-3}
+      MAX_PENDING_RUNS: ${MAX_PENDING_RUNS:-100}
+      RUNNER_IMAGE: ${RUNNER_IMAGE:-agentscope-runner:py312}
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      # Sibling task containers need the SAME absolute path on daemon and backend.
+      - ${AGENTSCOPE_WORKSPACE_ROOT:-/tmp/agentscope-workspaces}:${AGENTSCOPE_WORKSPACE_ROOT:-/tmp/agentscope-workspaces}
+      - ./artifacts:/app/artifacts
+    ports:
+      - "127.0.0.1:${API_PORT:-8000}:8000"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/ready', timeout=5)"]
+      interval: 10s
+      timeout: 6s
+      retries: 5
+    stop_grace_period: 90s
+
+  migrate:
+    profiles: ["tools"]
+    image: agentscope-api:local
+    environment:
+      DATABASE_URL: ${COMPOSE_DATABASE_URL:-postgresql+psycopg://agentscope:REPLACE_ME@postgres:5432/agentscope}
+    command: ["alembic", "-c", "backend/alembic.ini", "upgrade", "head"]
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  frontend:
+    build:
+      context: .
+      dockerfile: docker/frontend.Dockerfile
+    environment:
+      API_PROXY_TARGET: http://backend:8000
+    volumes:
+      - ./frontend/src:/app/frontend/src
+      - ./frontend/index.html:/app/frontend/index.html
+    ports:
+      - "127.0.0.1:${UI_PORT:-5173}:5173"
+    depends_on:
+      backend:
+        condition: service_healthy
+
+volumes:
+  agentscope-postgres:
