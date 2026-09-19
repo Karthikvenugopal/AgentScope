@@ -1,0 +1,30 @@
+id: transaction_transition
+title: Make order transitions atomic
+description: Repair an order state transition that can persist inventory changes when
+  payment fails.
+repository:
+  type: local
+  source: fixtures/transaction_transition
+setup_command: null
+test_command: python -m pytest -q
+timeout_seconds: 120
+expected_behavior: Checkout commits order and inventory together or rolls both back.
+version: 1.0.0
+language: Python
+difficulty: medium
+tags:
+- transactions
+- state
+- reliability
+provenance:
+  source: agentscope
+  dataset: AgentScope Benchmark
+  dataset_version: '0.1'
+  source_task_id: transaction_transition
+  task_hash: 6f3bd5580f025e34d84c97039c3d755c45e6d97843547fd81d47f933cd0d2e35
+  environment_hash: 3b3a9ef12f64cf8cc322174a5e09d1bf4a7badc091b494c12a7c9e831d47777b
+  verifier_hash: 0086dfc417d2155b34d41f6c17e5feb29f1c2523a1a9a043427b7c415b75b16e
+verification:
+  source: verification/transaction_transition
+  timeout_seconds: 45
+  kind: pytest

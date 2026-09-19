@@ -1,0 +1,30 @@
+id: resource_cleanup
+title: Prevent streaming resource leaks
+description: Close transport responses on success, parse failure, cancellation, and
+  consumer early exit.
+repository:
+  type: local
+  source: fixtures/resource_cleanup
+setup_command: null
+test_command: python -m pytest -q
+timeout_seconds: 120
+expected_behavior: stream_rows always closes the response exactly once.
+version: 1.0.0
+language: Python
+difficulty: medium
+tags:
+- resources
+- reliability
+- generators
+provenance:
+  source: agentscope
+  dataset: AgentScope Benchmark
+  dataset_version: '0.1'
+  source_task_id: resource_cleanup
+  task_hash: ac9ea2f194413d81893ac5472b25e3f6f0db81a3bf44a9229bfbab2b085ba599
+  environment_hash: 04753e2ecf1eb47cc9a10ec209c402a0ad852cf1fd51f9f850a48d56a1816c88
+  verifier_hash: fcb0308d64a38bb6f0e09ad6fc70a64fdc6cf66707556efe2badd33d596bcdf3
+verification:
+  source: verification/resource_cleanup
+  timeout_seconds: 45
+  kind: pytest
