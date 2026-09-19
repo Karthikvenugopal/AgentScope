@@ -1,0 +1,48 @@
+schema_version: "1"
+experiment_id: provider-study-v1
+name: Single-agent provider study v1
+research_question: How do single-agent Codex and Claude Code executions differ on the same frozen tasks under the same AgentScope harness?
+benchmark_name: AgentScope Benchmark
+benchmark_version: "0.1"
+benchmark_manifest_hash: 132a2070b12f143d889a2b88af200063800194162835bbdd3eea01aef8f38f80
+task_ids:
+  - bounded_retry
+  - cache_invalidation
+  - cross_file_permissions
+  - cursor_pagination
+  - extract_transport_refactor
+  - incorrect_api_response
+  - js_batch_dedupe
+  - js_ttl_cache
+  - lock_inventory
+  - request_validation
+  - resource_cleanup
+  - transaction_transition
+configurations:
+  - id: single-codex
+    strategy: single
+    provider: codex
+  - id: single-claude-code
+    strategy: single
+    provider: claude-code
+repetitions: 3
+random_seed: 20260920
+bootstrap_seed: 20260921
+execution_order: stratified_random
+experiment_run_concurrency: 1
+provider_requirements: [codex, claude-code]
+limits:
+  max_agent_turns: 20
+  max_tool_calls: 100
+  command_timeout_seconds: 120
+  overall_timeout_seconds: 900
+  max_file_write_bytes: 1000000
+  max_captured_output_bytes: 1000000
+budget:
+  max_total_runs: 72
+  max_provider_invocations: 72
+  max_tokens: 30000000
+infrastructure_retry_limit: 2
+infrastructure_backoff_seconds: 10
+created_at: 2026-09-18T15:15:00-07:00
+notes: Secondary experiment. Do not execute unless both configured providers are available.
