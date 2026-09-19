@@ -1,0 +1,28 @@
+{
+  "bootstrap_seed": 20260919,
+  "database_access": false,
+  "figures": [
+    "01-system-architecture.svg",
+    "02-experimental-success.svg",
+    "03-task-outcomes.svg",
+    "04-task-latency.svg",
+    "05-token-consumption.svg",
+    "06-parallel-workload.svg",
+    "07-representative-trajectory.svg"
+  ],
+  "infrastructure_attempts": 1,
+  "offline": true,
+  "pairwise_comparisons_match_frozen_export": true,
+  "protocol_exclusions": 2,
+  "provider_invocations": 0,
+  "publication_analysis": "results/strategy-study-v1/publication_analysis.json",
+  "source_hashes": {
+    "pairwise_comparisons.json": "52c4c9ff5a086131f317ee037d64022658c60dbdbf5c463c5a4d2c75cb9282c5",
+    "raw_runs.csv": "b53645675635a8aaabd70fe3dc715debfe3be819381cf8469076ece82cf8b419",
+    "strategy_summary.json": "220d5f9967e4b20cb8747da8c340a0e151ff94d5e235061ca4cd622e7c4987e9",
+    "task_aggregates.csv": "59392a56955fc784a564e43d151b1835fe4f9b3d44436bb175ae9c89a5595b99"
+  },
+  "strategy_summary_matches_frozen_export": true,
+  "trace_findings_generated": true,
+  "valid_runs": 108
+}

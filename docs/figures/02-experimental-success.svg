@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="650" viewBox="0 0 1000 650" role="img" aria-labelledby="title desc">
+<title id="title">Figure 2 · Official task-success estimates</title>
+<desc id="desc">Mean task-level success probability; 95% bootstrap intervals resample 12 tasks.</desc>
+<rect width="1000" height="650" fill="#fbfcfb"/>
+<style>text{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif;fill:#173238}.mono{font-family:ui-monospace,SFMono-Regular,Menlo,monospace}.small{font-size:13px}.label{font-size:15px;font-weight:600}.title{font-size:26px;font-weight:700}.subtitle{font-size:14px;fill:#587179}</style>
+<text x="48.00" y="43.00" text-anchor="start" class="title">Figure 2 · Official task-success estimates</text>
+<text x="48.00" y="68.00" text-anchor="start" class="subtitle">Mean task-level success probability; 95% bootstrap intervals resample 12 tasks.</text>
+<line x1="130.00" y1="530.00" x2="900.00" y2="530.00" stroke="#d7e1df" stroke-width="1"/>
+<text x="112.00" y="535.00" text-anchor="end" class="small">0%</text>
+<line x1="130.00" y1="452.00" x2="900.00" y2="452.00" stroke="#d7e1df" stroke-width="1"/>
+<text x="112.00" y="457.00" text-anchor="end" class="small">20%</text>
+<line x1="130.00" y1="374.00" x2="900.00" y2="374.00" stroke="#d7e1df" stroke-width="1"/>
+<text x="112.00" y="379.00" text-anchor="end" class="small">40%</text>
+<line x1="130.00" y1="296.00" x2="900.00" y2="296.00" stroke="#d7e1df" stroke-width="1"/>
+<text x="112.00" y="301.00" text-anchor="end" class="small">60%</text>
+<line x1="130.00" y1="218.00" x2="900.00" y2="218.00" stroke="#d7e1df" stroke-width="1"/>
+<text x="112.00" y="223.00" text-anchor="end" class="small">80%</text>
+<line x1="130.00" y1="140.00" x2="900.00" y2="140.00" stroke="#d7e1df" stroke-width="1"/>
+<text x="112.00" y="145.00" text-anchor="end" class="small">100%</text>
+<rect x="228.00" y="302.50" width="104.00" height="227.50" rx="3" fill="#147d6f" stroke="#147d6f" stroke-width="1.5"/>
+<line x1="280.00" y1="205.00" x2="280.00" y2="400.00" stroke="#173238" stroke-width="2.5"/>
+<line x1="264.00" y1="205.00" x2="296.00" y2="205.00" stroke="#173238" stroke-width="2.5"/>
+<line x1="264.00" y1="400.00" x2="296.00" y2="400.00" stroke="#173238" stroke-width="2.5"/>
+<text x="280.00" y="289.50" text-anchor="middle" class="label">21/36 · 58.33%</text>
+<text x="280.00" y="562.00" text-anchor="middle" class="label">Single</text>
+<text x="280.00" y="584.00" text-anchor="middle" class="small">95% CI 33.33–83.33%</text>
+<rect x="468.00" y="367.50" width="104.00" height="162.50" rx="3" fill="#d38a2f" stroke="#d38a2f" stroke-width="1.5"/>
+<line x1="520.00" y1="280.83" x2="520.00" y2="454.17" stroke="#173238" stroke-width="2.5"/>
+<line x1="504.00" y1="280.83" x2="536.00" y2="280.83" stroke="#173238" stroke-width="2.5"/>
+<line x1="504.00" y1="454.17" x2="536.00" y2="454.17" stroke="#173238" stroke-width="2.5"/>
+<text x="520.00" y="354.50" text-anchor="middle" class="label">15/36 · 41.67%</text>
+<text x="520.00" y="562.00" text-anchor="middle" class="label">Staged</text>
+<text x="520.00" y="584.00" text-anchor="middle" class="small">95% CI 19.44–63.89%</text>
+<rect x="708.00" y="367.50" width="104.00" height="162.50" rx="3" fill="#6b63a8" stroke="#6b63a8" stroke-width="1.5"/>
+<line x1="760.00" y1="280.83" x2="760.00" y2="454.17" stroke="#173238" stroke-width="2.5"/>
+<line x1="744.00" y1="280.83" x2="776.00" y2="280.83" stroke="#173238" stroke-width="2.5"/>
+<line x1="744.00" y1="454.17" x2="776.00" y2="454.17" stroke="#173238" stroke-width="2.5"/>
+<text x="760.00" y="354.50" text-anchor="middle" class="label">15/36 · 41.67%</text>
+<text x="760.00" y="562.00" text-anchor="middle" class="label">Parallel-2</text>
+<text x="760.00" y="584.00" text-anchor="middle" class="small">95% CI 19.44–63.89%</text>
+<text x="500.00" y="615.00" text-anchor="middle" class="subtitle">Official independent verification · three repetitions per task and strategy</text>
+</svg>
