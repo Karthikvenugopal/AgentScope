@@ -1,0 +1,10 @@
+# Explicit opt-in: credential files stay outside the build context and are only
+# visible to the trusted API, which transfers selected secrets over stdin.
+services:
+  backend:
+    environment:
+      CODEX_AUTH_FILE: /run/secrets/codex-auth.json
+      CLAUDE_AUTH_FILE: /run/secrets/claude-auth.json
+    volumes:
+      - ${CODEX_AUTH_SOURCE:-./docker/disabled-auth.json}:/run/secrets/codex-auth.json:ro
+      - ${CLAUDE_AUTH_SOURCE:-./docker/disabled-auth.json}:/run/secrets/claude-auth.json:ro
