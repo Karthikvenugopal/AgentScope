@@ -1,0 +1,59 @@
+{
+  "phase": 8,
+  "captured_at": "2026-09-18T22:00:00Z",
+  "scientific_integrity": "One-off functional demonstrations, not statistical comparisons.",
+  "provider_availability": {
+    "codex": "available",
+    "claude-code": "unavailable: no explicit credential source configured"
+  },
+  "runs": [
+    {
+      "run_id": "phase8-native-easy-v2",
+      "task_id": "request_validation",
+      "strategy": "single",
+      "roles": ["codex"],
+      "status": "completed",
+      "verification": "5/5 passed",
+      "wall_time_ms": 47420.429624966346,
+      "total_tokens": 75081,
+      "provider_tool_calls": 5,
+      "artifact": "../../artifacts/runs/phase8-native-easy-v2/run.json"
+    },
+    {
+      "run_id": "phase8-native-medium-staged",
+      "task_id": "cache_invalidation",
+      "strategy": "planner_implementer_reviewer",
+      "roles": ["codex", "codex", "codex"],
+      "status": "completed",
+      "verification": "2/2 passed",
+      "wall_time_ms": 104955.22649999475,
+      "total_tokens": 160859,
+      "provider_tool_calls": 10,
+      "artifact": "../../artifacts/runs/phase8-native-medium-staged/run.json"
+    },
+    {
+      "run_id": "phase8-native-hard-parallel-v2",
+      "task_id": "cross_file_permissions",
+      "strategy": "parallel_implementers",
+      "roles": ["codex planner", "2 codex implementers", "codex reviewer"],
+      "status": "completed",
+      "verification": "1/1 passed after candidate selection",
+      "wall_time_ms": 101537.43608295918,
+      "total_tokens": 236807,
+      "provider_tool_calls": 15,
+      "artifact": "../../artifacts/runs/phase8-native-hard-parallel-v2/run.json"
+    },
+    {
+      "run_id": "phase8-harbor-cancel-async",
+      "task_id": "terminal-bench.cancel-async-tasks",
+      "strategy": "single",
+      "roles": ["codex"],
+      "status": "verification_failed",
+      "verification": "5/6 passed; official failure retained",
+      "wall_time_ms": 99290.98041699035,
+      "total_tokens": 66903,
+      "provider_tool_calls": 4,
+      "artifact": "../../artifacts/runs/phase8-harbor-cancel-async/run.json"
+    }
+  ]
+}

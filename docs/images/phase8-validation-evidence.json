@@ -1,0 +1,35 @@
+{
+  "captured_at": "2026-09-18T22:00:00Z",
+  "native_command": "python -m app.cli benchmark validate",
+  "native_suite": "AgentScope Benchmark v0.1",
+  "native_task_count": 12,
+  "native_results": {
+    "valid": 12,
+    "baseline_failed_as_expected": 12,
+    "reference_passed_twice": 12,
+    "deterministic": 12,
+    "isolation_passed": 12
+  },
+  "external_task": "terminal-bench.cancel-async-tasks",
+  "external_dataset": "terminal-bench/terminal-bench-2-1",
+  "external_dataset_version": "2.1@6",
+  "external_results": {
+    "baseline_failed_as_expected": true,
+    "reference_passed_twice": true,
+    "deterministic": true,
+    "isolation_passed": true
+  },
+  "quality_gates": {
+    "backend_without_opt_in": "161 passed, 10 skipped",
+    "backend_with_docker_postgres": "167 passed, 4 paid-provider tests skipped",
+    "frontend": "23 passed",
+    "ruff": "passed",
+    "mypy_strict": "passed",
+    "frontend_typecheck": "passed",
+    "frontend_lint": "passed",
+    "frontend_production_build": "passed",
+    "openapi_generation_check": "passed",
+    "alembic": "0005_benchmark_provenance (head); no drift",
+    "production_images": "backend, frontend, and runner built"
+  }
+}

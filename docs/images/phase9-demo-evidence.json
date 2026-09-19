@@ -1,0 +1,11 @@
+{
+  "captured_at": "2026-09-19T07:53:00-07:00",
+  "experiment_id": "strategy-study-v1",
+  "source": "persisted PostgreSQL experiment ledger via local API and dashboard",
+  "screenshots": [
+    "phase9-experiments.png",
+    "phase9-strategy-summary.png",
+    "phase9-run-matrix.png"
+  ],
+  "browser_errors": []
+}
