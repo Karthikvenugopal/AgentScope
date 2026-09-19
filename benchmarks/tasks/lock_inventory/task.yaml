@@ -1,0 +1,30 @@
+id: lock_inventory
+title: Make inventory reservation thread-safe
+description: Repair a check-then-decrement race while preserving per-SKU concurrency.
+repository:
+  type: local
+  source: fixtures/lock_inventory
+setup_command: null
+test_command: python -m pytest -q
+timeout_seconds: 180
+expected_behavior: Concurrent reservations never oversell and unrelated SKUs do not
+  share one global lock.
+version: 1.0.0
+language: Python
+difficulty: hard
+tags:
+- concurrency
+- locking
+- state
+provenance:
+  source: agentscope
+  dataset: AgentScope Benchmark
+  dataset_version: '0.1'
+  source_task_id: lock_inventory
+  task_hash: 40526b74c064f80285d25040485e52dba69ee67c390ac7d838e354410ae96fc2
+  environment_hash: 81ee761003f111c437a5757b403a62921749484230bd016e25bf183f8bbd861b
+  verifier_hash: 4b616a99ce95a39a2eb852f22a1f2b9cfc055f1917471ac8840f7e18d28e4dff
+verification:
+  source: verification/lock_inventory
+  timeout_seconds: 45
+  kind: pytest

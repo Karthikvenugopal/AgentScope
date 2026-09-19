@@ -1,0 +1,31 @@
+id: request_validation
+title: Enforce request validation
+description: Reject malformed signup payloads without changing the service API. Email
+  must contain a local part and dotted domain; names are required and limited to 80
+  characters. Normalize accepted values without mutating the input.
+repository:
+  type: local
+  source: fixtures/request_validation
+setup_command: null
+test_command: python -m pytest -q
+timeout_seconds: 120
+expected_behavior: validate_signup returns normalized data or a field-specific ValidationError.
+version: 1.0.1
+language: Python
+difficulty: easy
+tags:
+- api
+- validation
+- bugfix
+provenance:
+  source: agentscope
+  dataset: AgentScope Benchmark
+  dataset_version: '0.1'
+  source_task_id: request_validation
+  task_hash: 4e53c4a13eefb982d725949f209a9aa3a3347636eaf715078e1789f4fa08844b
+  environment_hash: d1dfcbae2d3a3a90cfb35e7e46a7625a797f2c100082722232f397816e3bba11
+  verifier_hash: f0472025fbcb5723518ed716632b295e87f9819fce3ba38ea6168fd09af8aed6
+verification:
+  source: verification/request_validation
+  timeout_seconds: 45
+  kind: pytest
