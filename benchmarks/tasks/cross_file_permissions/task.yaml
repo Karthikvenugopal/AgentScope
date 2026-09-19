@@ -1,0 +1,31 @@
+id: cross_file_permissions
+title: Repair inherited authorization
+description: Trace project membership, document ownership, and inherited organization
+  roles across modules.
+repository:
+  type: local
+  source: fixtures/cross_file_permissions
+setup_command: null
+test_command: python -m pytest -q
+timeout_seconds: 180
+expected_behavior: can_edit applies tenant-safe owner, project editor, and organization
+  admin rules.
+version: 1.0.0
+language: Python
+difficulty: hard
+tags:
+- authorization
+- cross-file
+- security
+provenance:
+  source: agentscope
+  dataset: AgentScope Benchmark
+  dataset_version: '0.1'
+  source_task_id: cross_file_permissions
+  task_hash: 42ec0f0ae627fc1961d0755b867686168fe5b82676f41021ba1383e79f3bd84a
+  environment_hash: 68e8d180ba3374644ba2ccdd2a3531aac69c28d4e79ddb7cc1e2428a3db88289
+  verifier_hash: f8072ddfca8bb5d183cf242933cc65b1077725306a39b26ac1bf6281f50bcb03
+verification:
+  source: verification/cross_file_permissions
+  timeout_seconds: 45
+  kind: pytest

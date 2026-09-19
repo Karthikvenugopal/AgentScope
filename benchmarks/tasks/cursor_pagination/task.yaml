@@ -1,0 +1,31 @@
+id: cursor_pagination
+title: Repair cursor pagination
+description: Return stable, non-overlapping pages from the event store, including
+  duplicate timestamps.
+repository:
+  type: local
+  source: fixtures/cursor_pagination
+setup_command: null
+test_command: python -m pytest -q
+timeout_seconds: 120
+expected_behavior: Pages use an opaque (timestamp,id) cursor and never skip or duplicate
+  events.
+version: 1.0.0
+language: Python
+difficulty: medium
+tags:
+- api
+- pagination
+- data
+provenance:
+  source: agentscope
+  dataset: AgentScope Benchmark
+  dataset_version: '0.1'
+  source_task_id: cursor_pagination
+  task_hash: 7f5f17e2020cd785ea13680f0b7a00723673a15711ef48bb0e78a94453e996e1
+  environment_hash: d0fd6d076a72cf0077b44b4e6a7b33527e7b3b786771fe8fe082d7efbf5c6d31
+  verifier_hash: f755359da725025f24c4ba3cdf452ee9bedaba9ce2f25d4a68314df16142011c
+verification:
+  source: verification/cursor_pagination
+  timeout_seconds: 45
+  kind: pytest
