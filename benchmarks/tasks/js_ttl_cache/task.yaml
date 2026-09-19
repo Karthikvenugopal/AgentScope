@@ -1,0 +1,31 @@
+id: js_ttl_cache
+title: Repair TTL cache semantics
+description: Fix expiration, falsy values, and monotonic clock injection in a JavaScript
+  cache.
+repository:
+  type: local
+  source: fixtures/js_ttl_cache
+setup_command: null
+test_command: node --test
+timeout_seconds: 120
+expected_behavior: Cache entries expire at the deadline and preserve false, zero,
+  and empty strings.
+version: 1.0.0
+language: TypeScript/JavaScript
+difficulty: medium
+tags:
+- javascript
+- cache
+- time
+provenance:
+  source: agentscope
+  dataset: AgentScope Benchmark
+  dataset_version: '0.1'
+  source_task_id: js_ttl_cache
+  task_hash: 966473e72f33f23327f057c74f92505251198d0e778d5cfa9eafb490465e8838
+  environment_hash: c69d16579e6a254884c6575df1a2e5893f0c0d21014694ede2488c2edfe18c31
+  verifier_hash: 49ce5556bcb63c0443d4dec0bd4eef87f68d696bfba5f82bd8e7eeb148398995
+verification:
+  source: verification/js_ttl_cache
+  timeout_seconds: 45
+  kind: pytest

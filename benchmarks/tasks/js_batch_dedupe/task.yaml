@@ -1,0 +1,31 @@
+id: js_batch_dedupe
+title: Deduplicate concurrent batch loads
+description: Coalesce overlapping asynchronous key loads without sharing failures
+  across later batches.
+repository:
+  type: local
+  source: fixtures/js_batch_dedupe
+setup_command: null
+test_command: node --test
+timeout_seconds: 180
+expected_behavior: Concurrent requests share in-flight keys; failures clear state
+  for retry.
+version: 1.0.0
+language: TypeScript/JavaScript
+difficulty: hard
+tags:
+- javascript
+- concurrency
+- batching
+provenance:
+  source: agentscope
+  dataset: AgentScope Benchmark
+  dataset_version: '0.1'
+  source_task_id: js_batch_dedupe
+  task_hash: 8cfb36ae7df7a1f70ccef366325bd5f1d4b5f47923bf0723ebaeb315429692c4
+  environment_hash: 689faa34607b2d7283bbc2fd283a56f9503151c6c4ce6148e1ae78e6a0583988
+  verifier_hash: 4b1cba0a91df3bc5da6a07fce0f0967d171d3ef943481573966a3e4c7671a765
+verification:
+  source: verification/js_batch_dedupe
+  timeout_seconds: 45
+  kind: pytest
