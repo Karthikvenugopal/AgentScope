@@ -1,0 +1,290 @@
+{
+  "benchmark": {
+    "frozen": true,
+    "name": "AgentScope Benchmark",
+    "version": "0.1"
+  },
+  "interoperability_tasks": [
+    {
+      "dataset": "terminal-bench/terminal-bench-2-1",
+      "dataset_version": "2.1@6",
+      "difficulty": "medium",
+      "environment_hash": "b6e743494999ed882507d5400b0506fdd11d8a71e3c0b591041a1242e680c6da",
+      "id": "terminal-bench.break-filter-js-from-html",
+      "language": "TypeScript/JavaScript",
+      "source": "harbor",
+      "tags": [
+        "security",
+        "harbor",
+        "terminal-bench/terminal-bench-2-1"
+      ],
+      "task_hash": "75f90cdc9a6d31bb4b0bed4e354be880a110203c9286755565878cccc4233d8e",
+      "verifier_hash": "65a5702848346b3f0fbe275f789f867f5e7760a2188cc24d10b76a70b8dc9970",
+      "version": "1.1"
+    },
+    {
+      "dataset": "terminal-bench/terminal-bench-2-1",
+      "dataset_version": "2.1@6",
+      "difficulty": "hard",
+      "environment_hash": "6336e43bf6a462f97fa12a6d1a6515b3d0e998bdd1dd57f3295c89dc3adc0b83",
+      "id": "terminal-bench.cancel-async-tasks",
+      "language": "Python",
+      "source": "harbor",
+      "tags": [
+        "async",
+        "concurrency",
+        "python",
+        "harbor",
+        "terminal-bench/terminal-bench-2-1"
+      ],
+      "task_hash": "a2463ff600ab322ad03731a0fdde440d52dbe981483d7d180d5958c75fff6b42",
+      "verifier_hash": "2d3ed8ea6c6e76c42bbee9da252c62caf02a56bb3c663980463291c81113d216",
+      "version": "1.1"
+    },
+    {
+      "dataset": "terminal-bench/terminal-bench-2-1",
+      "dataset_version": "2.1@6",
+      "difficulty": "medium",
+      "environment_hash": "4b9daf53adb7b96514f91af1b5cf9c6ebc5eebf381095e3a66d8deaa0326a8f2",
+      "id": "terminal-bench.custom-memory-heap-crash",
+      "language": "C++",
+      "source": "harbor",
+      "tags": [
+        "cpp",
+        "memory-management",
+        "debugging",
+        "harbor",
+        "terminal-bench/terminal-bench-2-1"
+      ],
+      "task_hash": "87602e9ce118ad1df378a7c37a376e481996d1eace2a8aaa1e20525723548b5d",
+      "verifier_hash": "f020259d30525cb65ac533d8ca413e9ed8b0b2a8625e8fcde3262288cd355e97",
+      "version": "1.1"
+    },
+    {
+      "dataset": "terminal-bench/terminal-bench-2-1",
+      "dataset_version": "2.1@6",
+      "difficulty": "medium",
+      "environment_hash": "25d75a998a83e0c7f35d7824877523eee71c88a5982b6b20258436082179321f",
+      "id": "terminal-bench.query-optimize",
+      "language": "SQL",
+      "source": "harbor",
+      "tags": [
+        "query-optimization",
+        "sql-query",
+        "harbor",
+        "terminal-bench/terminal-bench-2-1"
+      ],
+      "task_hash": "1c237d1dda935ad8756729ce988cac1f32b779c2d0cd131327eb14ba7e5d3366",
+      "verifier_hash": "47627b6271b3f0ff94e2db207e7e575c9932cf1c3a72bcff1f0fdc472a4ed81a",
+      "version": "1.1"
+    }
+  ],
+  "schema_version": "1",
+  "task_count": 12,
+  "tasks": [
+    {
+      "dataset": "AgentScope Benchmark",
+      "dataset_version": "0.1",
+      "difficulty": "medium",
+      "environment_hash": "a9b502ba214d9634820482e4876126e0ceef5c662a87f4b9af9ffc932322716c",
+      "id": "bounded_retry",
+      "language": "Python",
+      "source": "agentscope",
+      "tags": [
+        "retry",
+        "reliability",
+        "timeouts"
+      ],
+      "task_hash": "07df7bf97affa23de0836be277033ea144f0a33019d55b121ee1eced33d6c5ee",
+      "verifier_hash": "476864732f9258e0aa2202c1d7367ed2b02b7857e350c05414a3f9e9bde21591",
+      "version": "1.0.0"
+    },
+    {
+      "dataset": "AgentScope Benchmark",
+      "dataset_version": "0.1",
+      "difficulty": "medium",
+      "environment_hash": "092c08dc3e4e6e3ae6424b679448fd8fd71c869587e037002e62caaa0a3cae75",
+      "id": "cache_invalidation",
+      "language": "Python",
+      "source": "agentscope",
+      "tags": [
+        "cache",
+        "state",
+        "multi-tenant"
+      ],
+      "task_hash": "4fd7bda60b5e613ae0e051f3c89bc5149654f540f4ae9cd4cc1bf69dccd9f5c5",
+      "verifier_hash": "86a461a05bff972b372d4f40f547a37842671ac7584b9f6f4ff32063e19e4aec",
+      "version": "1.0.0"
+    },
+    {
+      "dataset": "AgentScope Benchmark",
+      "dataset_version": "0.1",
+      "difficulty": "hard",
+      "environment_hash": "68e8d180ba3374644ba2ccdd2a3531aac69c28d4e79ddb7cc1e2428a3db88289",
+      "id": "cross_file_permissions",
+      "language": "Python",
+      "source": "agentscope",
+      "tags": [
+        "authorization",
+        "cross-file",
+        "security"
+      ],
+      "task_hash": "42ec0f0ae627fc1961d0755b867686168fe5b82676f41021ba1383e79f3bd84a",
+      "verifier_hash": "f8072ddfca8bb5d183cf242933cc65b1077725306a39b26ac1bf6281f50bcb03",
+      "version": "1.0.0"
+    },
+    {
+      "dataset": "AgentScope Benchmark",
+      "dataset_version": "0.1",
+      "difficulty": "medium",
+      "environment_hash": "d0fd6d076a72cf0077b44b4e6a7b33527e7b3b786771fe8fe082d7efbf5c6d31",
+      "id": "cursor_pagination",
+      "language": "Python",
+      "source": "agentscope",
+      "tags": [
+        "api",
+        "pagination",
+        "data"
+      ],
+      "task_hash": "7f5f17e2020cd785ea13680f0b7a00723673a15711ef48bb0e78a94453e996e1",
+      "verifier_hash": "f755359da725025f24c4ba3cdf452ee9bedaba9ce2f25d4a68314df16142011c",
+      "version": "1.0.0"
+    },
+    {
+      "dataset": "AgentScope Benchmark",
+      "dataset_version": "0.1",
+      "difficulty": "medium",
+      "environment_hash": "ba682a8f34ece4a05dfb9b4484bfcb94ed0dc7596457eec9bd156a7a27b236f8",
+      "id": "extract_transport_refactor",
+      "language": "Python",
+      "source": "agentscope",
+      "tags": [
+        "refactoring",
+        "abstraction",
+        "cross-file"
+      ],
+      "task_hash": "fb5471ea2eedef2075f5dfe369eb2b5d5499d64aa62c1bdffb3461cbe34218a1",
+      "verifier_hash": "dfa1618ee12065e428aeb3c2d2de0f768d0c1edf7430d55098d6e7136c187082",
+      "version": "1.0.0"
+    },
+    {
+      "dataset": "AgentScope Benchmark",
+      "dataset_version": "0.1",
+      "difficulty": "easy",
+      "environment_hash": "c6e794f3d0001c72d124b0ce30c1c976165b14f0115dceff138909bba34ef8cb",
+      "id": "incorrect_api_response",
+      "language": "Python",
+      "source": "agentscope",
+      "tags": [
+        "python",
+        "api",
+        "bugfix"
+      ],
+      "task_hash": "788098aa3138b2b1bde0a18b76c24bd1532fbf9094a00d9531febdf14e366484",
+      "verifier_hash": "68b0315c5116d6c44ec1330107487ca5f480323f78a10eaaace07b283b8baa78",
+      "version": "2"
+    },
+    {
+      "dataset": "AgentScope Benchmark",
+      "dataset_version": "0.1",
+      "difficulty": "hard",
+      "environment_hash": "689faa34607b2d7283bbc2fd283a56f9503151c6c4ce6148e1ae78e6a0583988",
+      "id": "js_batch_dedupe",
+      "language": "TypeScript/JavaScript",
+      "source": "agentscope",
+      "tags": [
+        "javascript",
+        "concurrency",
+        "batching"
+      ],
+      "task_hash": "8cfb36ae7df7a1f70ccef366325bd5f1d4b5f47923bf0723ebaeb315429692c4",
+      "verifier_hash": "4b1cba0a91df3bc5da6a07fce0f0967d171d3ef943481573966a3e4c7671a765",
+      "version": "1.0.0"
+    },
+    {
+      "dataset": "AgentScope Benchmark",
+      "dataset_version": "0.1",
+      "difficulty": "medium",
+      "environment_hash": "c69d16579e6a254884c6575df1a2e5893f0c0d21014694ede2488c2edfe18c31",
+      "id": "js_ttl_cache",
+      "language": "TypeScript/JavaScript",
+      "source": "agentscope",
+      "tags": [
+        "javascript",
+        "cache",
+        "time"
+      ],
+      "task_hash": "966473e72f33f23327f057c74f92505251198d0e778d5cfa9eafb490465e8838",
+      "verifier_hash": "49ce5556bcb63c0443d4dec0bd4eef87f68d696bfba5f82bd8e7eeb148398995",
+      "version": "1.0.0"
+    },
+    {
+      "dataset": "AgentScope Benchmark",
+      "dataset_version": "0.1",
+      "difficulty": "hard",
+      "environment_hash": "81ee761003f111c437a5757b403a62921749484230bd016e25bf183f8bbd861b",
+      "id": "lock_inventory",
+      "language": "Python",
+      "source": "agentscope",
+      "tags": [
+        "concurrency",
+        "locking",
+        "state"
+      ],
+      "task_hash": "40526b74c064f80285d25040485e52dba69ee67c390ac7d838e354410ae96fc2",
+      "verifier_hash": "4b616a99ce95a39a2eb852f22a1f2b9cfc055f1917471ac8840f7e18d28e4dff",
+      "version": "1.0.0"
+    },
+    {
+      "dataset": "AgentScope Benchmark",
+      "dataset_version": "0.1",
+      "difficulty": "easy",
+      "environment_hash": "d1dfcbae2d3a3a90cfb35e7e46a7625a797f2c100082722232f397816e3bba11",
+      "id": "request_validation",
+      "language": "Python",
+      "source": "agentscope",
+      "tags": [
+        "api",
+        "validation",
+        "bugfix"
+      ],
+      "task_hash": "4e53c4a13eefb982d725949f209a9aa3a3347636eaf715078e1789f4fa08844b",
+      "verifier_hash": "f0472025fbcb5723518ed716632b295e87f9819fce3ba38ea6168fd09af8aed6",
+      "version": "1.0.1"
+    },
+    {
+      "dataset": "AgentScope Benchmark",
+      "dataset_version": "0.1",
+      "difficulty": "medium",
+      "environment_hash": "04753e2ecf1eb47cc9a10ec209c402a0ad852cf1fd51f9f850a48d56a1816c88",
+      "id": "resource_cleanup",
+      "language": "Python",
+      "source": "agentscope",
+      "tags": [
+        "resources",
+        "reliability",
+        "generators"
+      ],
+      "task_hash": "ac9ea2f194413d81893ac5472b25e3f6f0db81a3bf44a9229bfbab2b085ba599",
+      "verifier_hash": "fcb0308d64a38bb6f0e09ad6fc70a64fdc6cf66707556efe2badd33d596bcdf3",
+      "version": "1.0.0"
+    },
+    {
+      "dataset": "AgentScope Benchmark",
+      "dataset_version": "0.1",
+      "difficulty": "medium",
+      "environment_hash": "3b3a9ef12f64cf8cc322174a5e09d1bf4a7badc091b494c12a7c9e831d47777b",
+      "id": "transaction_transition",
+      "language": "Python",
+      "source": "agentscope",
+      "tags": [
+        "transactions",
+        "state",
+        "reliability"
+      ],
+      "task_hash": "6f3bd5580f025e34d84c97039c3d755c45e6d97843547fd81d47f933cd0d2e35",
+      "verifier_hash": "0086dfc417d2155b34d41f6c17e5feb29f1c2523a1a9a043427b7c415b75b16e",
+      "version": "1.0.0"
+    }
+  ]
+}
