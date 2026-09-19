@@ -1,0 +1,497 @@
+{
+  "parallel2-codex": {
+    "all_runs": {
+      "concurrency_factor": {
+        "mean": 1.3387391291653425,
+        "median": 1.3242308257044306,
+        "p25": 1.3054150690576964,
+        "p75": 1.398977047560791
+      },
+      "peak_concurrent_provider_processes": {
+        "mean": 1.9444444444444444,
+        "median": 2.0,
+        "p25": 2.0,
+        "p75": 2.0
+      },
+      "provider_invocations": {
+        "mean": 3.75,
+        "median": 4.0,
+        "p25": 3.9166666666666665,
+        "p75": 4.0
+      },
+      "provider_tool_calls": {
+        "mean": 13.861111111111112,
+        "median": 14.666666666666666,
+        "p25": 12.75,
+        "p75": 15.333333333333332
+      },
+      "strategy_wall_time_ms": {
+        "mean": 106886.977614691,
+        "median": 106255.75989599261,
+        "p25": 100238.75582998153,
+        "p75": 116619.48299333744
+      },
+      "summed_provider_execution_time_ms": {
+        "mean": 144730.74118383133,
+        "median": 146434.71705530345,
+        "p25": 129529.66965262021,
+        "p75": 161532.72291983012
+      },
+      "task_wall_time_ms": {
+        "mean": 107512.15690957745,
+        "median": 106829.50665265284,
+        "p25": 100941.16043749575,
+        "p75": 117110.09830558517
+      },
+      "total_tokens": {
+        "mean": 228632.06060606058,
+        "median": 230514.33333333334,
+        "p25": 214483.5,
+        "p75": 235089.5
+      }
+    },
+    "benchmark_successes": 15,
+    "efficiency": {
+      "provider_invocations_per_success": 9.0,
+      "tokens_per_success": null,
+      "wall_time_ms_per_success": 258029.17658298588
+    },
+    "mean_task_success_probability": 0.4166666666666667,
+    "success_bootstrap_95_ci": [
+      0.19444444444444442,
+      0.6388888888888888
+    ],
+    "successful_runs_only": {
+      "concurrency_factor": {
+        "mean": 1.3282330577306938,
+        "median": 1.3194083021918301,
+        "p25": 1.2944544951741364,
+        "p75": 1.3740629984891393
+      },
+      "peak_concurrent_provider_processes": {
+        "mean": 2.0,
+        "median": 2.0,
+        "p25": 2.0,
+        "p75": 2.0
+      },
+      "provider_invocations": {
+        "mean": 4.0,
+        "median": 4.0,
+        "p25": 4.0,
+        "p75": 4.0
+      },
+      "provider_tool_calls": {
+        "mean": 14.666666666666668,
+        "median": 15.0,
+        "p25": 14.25,
+        "p75": 16.25
+      },
+      "strategy_wall_time_ms": {
+        "mean": 99840.62019363877,
+        "median": 95711.57144400058,
+        "p25": 91160.44079199492,
+        "p75": 100519.10296872666
+      },
+      "summed_provider_execution_time_ms": {
+        "mean": 133469.17585397023,
+        "median": 125882.81869434286,
+        "p25": 122444.39638551557,
+        "p75": 133177.87889570172
+      },
+      "task_wall_time_ms": {
+        "mean": 100650.49005736918,
+        "median": 96801.94925000735,
+        "p25": 91887.94428098481,
+        "p75": 101277.87419749075
+      },
+      "total_tokens": {
+        "mean": 230782.7619047619,
+        "median": 230674.0,
+        "p25": 224774.0,
+        "p75": 237629.3333333333
+      }
+    },
+    "task_count": 12,
+    "telemetry_totals": {
+      "input_tokens": {
+        "available_runs": 26,
+        "observed_subtotal": 5852784.0,
+        "valid_runs": 36,
+        "value": null
+      },
+      "output_tokens": {
+        "available_runs": 26,
+        "observed_subtotal": 117389.0,
+        "valid_runs": 36,
+        "value": null
+      },
+      "provider_invocations": {
+        "available_runs": 36,
+        "observed_subtotal": 135.0,
+        "valid_runs": 36,
+        "value": 135.0
+      },
+      "provider_tool_calls": {
+        "available_runs": 36,
+        "observed_subtotal": 499.0,
+        "valid_runs": 36,
+        "value": 499.0
+      },
+      "strategy_wall_time_ms": {
+        "available_runs": 36,
+        "observed_subtotal": 3847931.194128876,
+        "valid_runs": 36,
+        "value": 3847931.194128876
+      },
+      "summed_provider_execution_time_ms": {
+        "available_runs": 36,
+        "observed_subtotal": 5210306.682617927,
+        "valid_runs": 36,
+        "value": 5210306.682617927
+      },
+      "task_wall_time_ms": {
+        "available_runs": 36,
+        "observed_subtotal": 3870437.648744788,
+        "valid_runs": 36,
+        "value": 3870437.648744788
+      },
+      "total_tokens": {
+        "available_runs": 26,
+        "observed_subtotal": 5970173.0,
+        "valid_runs": 36,
+        "value": null
+      }
+    },
+    "valid_runs": 36
+  },
+  "single-codex": {
+    "all_runs": {
+      "concurrency_factor": {
+        "mean": null,
+        "median": null,
+        "p25": null,
+        "p75": null
+      },
+      "peak_concurrent_provider_processes": {
+        "mean": 1.0,
+        "median": 1.0,
+        "p25": 1.0,
+        "p75": 1.0
+      },
+      "provider_invocations": {
+        "mean": 1.0,
+        "median": 1.0,
+        "p25": 1.0,
+        "p75": 1.0
+      },
+      "provider_tool_calls": {
+        "mean": 5.722222222222222,
+        "median": 5.666666666666667,
+        "p25": 5.25,
+        "p75": 6.083333333333333
+      },
+      "strategy_wall_time_ms": {
+        "mean": 49427.23253351869,
+        "median": 48942.91802783846,
+        "p25": 37564.76843733981,
+        "p75": 60980.57691311018
+      },
+      "summed_provider_execution_time_ms": {
+        "mean": 50321.028712999476,
+        "median": 48821.46675032952,
+        "p25": 37390.50717384089,
+        "p75": 60875.318690819164
+      },
+      "task_wall_time_ms": {
+        "mean": 51203.18709494313,
+        "median": 49666.094666502126,
+        "p25": 38337.78967031685,
+        "p75": 61799.533343835115
+      },
+      "total_tokens": {
+        "mean": 84040.91666666667,
+        "median": 83120.5,
+        "p25": 78938.66666666667,
+        "p75": 87089.41666666667
+      }
+    },
+    "benchmark_successes": 21,
+    "efficiency": {
+      "provider_invocations_per_success": 1.7142857142857142,
+      "tokens_per_success": 144070.14285714287,
+      "wall_time_ms_per_success": 87776.89216275966
+    },
+    "mean_task_success_probability": 0.5833333333333334,
+    "success_bootstrap_95_ci": [
+      0.3333333333333333,
+      0.8333333333333334
+    ],
+    "successful_runs_only": {
+      "concurrency_factor": {
+        "mean": null,
+        "median": null,
+        "p25": null,
+        "p75": null
+      },
+      "peak_concurrent_provider_processes": {
+        "mean": 1.0,
+        "median": 1.0,
+        "p25": 1.0,
+        "p75": 1.0
+      },
+      "provider_invocations": {
+        "mean": 1.0,
+        "median": 1.0,
+        "p25": 1.0,
+        "p75": 1.0
+      },
+      "provider_tool_calls": {
+        "mean": 5.3809523809523805,
+        "median": 5.333333333333333,
+        "p25": 5.0,
+        "p75": 5.833333333333334
+      },
+      "strategy_wall_time_ms": {
+        "mean": 45300.94935114695,
+        "median": 45570.82998634238,
+        "p25": 32860.689867986366,
+        "p75": 55457.59667352347
+      },
+      "summed_provider_execution_time_ms": {
+        "mean": 45176.909093187925,
+        "median": 45437.17230567321,
+        "p25": 32763.66472917531,
+        "p75": 55308.679972154394
+      },
+      "task_wall_time_ms": {
+        "mean": 46057.32584323656,
+        "median": 46330.303208301,
+        "p25": 33588.951722350124,
+        "p75": 56231.27569433806
+      },
+      "total_tokens": {
+        "mean": 78994.19047619049,
+        "median": 80231.66666666667,
+        "p25": 74304.33333333334,
+        "p75": 83622.66666666666
+      }
+    },
+    "task_count": 12,
+    "telemetry_totals": {
+      "input_tokens": {
+        "available_runs": 36,
+        "observed_subtotal": 2970145.0,
+        "valid_runs": 36,
+        "value": 2970145.0
+      },
+      "output_tokens": {
+        "available_runs": 36,
+        "observed_subtotal": 55328.0,
+        "valid_runs": 36,
+        "value": 55328.0
+      },
+      "provider_invocations": {
+        "available_runs": 36,
+        "observed_subtotal": 36.0,
+        "valid_runs": 36,
+        "value": 36.0
+      },
+      "provider_tool_calls": {
+        "available_runs": 36,
+        "observed_subtotal": 206.0,
+        "valid_runs": 36,
+        "value": 206.0
+      },
+      "strategy_wall_time_ms": {
+        "available_runs": 35,
+        "observed_subtotal": 1707536.925665161,
+        "valid_runs": 36,
+        "value": null
+      },
+      "summed_provider_execution_time_ms": {
+        "available_runs": 36,
+        "observed_subtotal": 1811557.0336679812,
+        "valid_runs": 36,
+        "value": 1811557.0336679812
+      },
+      "task_wall_time_ms": {
+        "available_runs": 36,
+        "observed_subtotal": 1843314.7354179528,
+        "valid_runs": 36,
+        "value": 1843314.7354179528
+      },
+      "total_tokens": {
+        "available_runs": 36,
+        "observed_subtotal": 3025473.0,
+        "valid_runs": 36,
+        "value": 3025473.0
+      }
+    },
+    "valid_runs": 36
+  },
+  "staged-codex": {
+    "all_runs": {
+      "concurrency_factor": {
+        "mean": 0.9814139941317056,
+        "median": 0.9840951046770549,
+        "p25": 0.9803097228011718,
+        "p75": 0.9871573292835655
+      },
+      "peak_concurrent_provider_processes": {
+        "mean": 1.0,
+        "median": 1.0,
+        "p25": 1.0,
+        "p75": 1.0
+      },
+      "provider_invocations": {
+        "mean": 2.777777777777778,
+        "median": 3.0,
+        "p25": 2.5833333333333335,
+        "p75": 3.0
+      },
+      "provider_tool_calls": {
+        "mean": 9.027777777777777,
+        "median": 9.5,
+        "p25": 7.75,
+        "p75": 10.416666666666666
+      },
+      "strategy_wall_time_ms": {
+        "mean": 103510.14726275268,
+        "median": 107610.81656249978,
+        "p25": 103879.60310065925,
+        "p75": 112527.51835093174
+      },
+      "summed_provider_execution_time_ms": {
+        "mean": 101900.32432982925,
+        "median": 106211.05175701086,
+        "p25": 100788.29402083163,
+        "p75": 111192.9472675741
+      },
+      "task_wall_time_ms": {
+        "mean": 104111.50536458363,
+        "median": 108125.92678451135,
+        "p25": 104717.27489583039,
+        "p75": 112987.05639248753
+      },
+      "total_tokens": {
+        "mean": 153456.68055555556,
+        "median": 156589.1666666667,
+        "p25": 146630.5,
+        "p75": 167706.66666666666
+      }
+    },
+    "benchmark_successes": 15,
+    "efficiency": {
+      "provider_invocations_per_success": 6.666666666666667,
+      "tokens_per_success": null,
+      "wall_time_ms_per_success": 249867.61287500072
+    },
+    "mean_task_success_probability": 0.4166666666666667,
+    "success_bootstrap_95_ci": [
+      0.19444444444444442,
+      0.638888888888889
+    ],
+    "successful_runs_only": {
+      "concurrency_factor": {
+        "mean": 0.9807029856180124,
+        "median": 0.9836422866615361,
+        "p25": 0.9776616475214288,
+        "p75": 0.9849008538240729
+      },
+      "peak_concurrent_provider_processes": {
+        "mean": 1.0,
+        "median": 1.0,
+        "p25": 1.0,
+        "p75": 1.0
+      },
+      "provider_invocations": {
+        "mean": 3.0,
+        "median": 3.0,
+        "p25": 3.0,
+        "p75": 3.0
+      },
+      "provider_tool_calls": {
+        "mean": 9.952380952380953,
+        "median": 11.0,
+        "p25": 8.666666666666668,
+        "p75": 11.166666666666668
+      },
+      "strategy_wall_time_ms": {
+        "mean": 99440.31976797851,
+        "median": 97716.86120901722,
+        "p25": 94348.07434006748,
+        "p75": 102747.59850716995
+      },
+      "summed_provider_execution_time_ms": {
+        "mean": 97664.24031748569,
+        "median": 96206.48045901908,
+        "p25": 92754.51418721545,
+        "p75": 100223.53388884221
+      },
+      "task_wall_time_ms": {
+        "mean": 100204.0391240513,
+        "median": 98439.62612503674,
+        "p25": 95075.31150682189,
+        "p75": 103562.99051033662
+      },
+      "total_tokens": {
+        "mean": 158909.2857142857,
+        "median": 167104.0,
+        "p25": 146603.6666666667,
+        "p75": 171292.8333333333
+      }
+    },
+    "task_count": 12,
+    "telemetry_totals": {
+      "input_tokens": {
+        "available_runs": 25,
+        "observed_subtotal": 3740529.0,
+        "valid_runs": 36,
+        "value": null
+      },
+      "output_tokens": {
+        "available_runs": 25,
+        "observed_subtotal": 76191.0,
+        "valid_runs": 36,
+        "value": null
+      },
+      "provider_invocations": {
+        "available_runs": 36,
+        "observed_subtotal": 100.0,
+        "valid_runs": 36,
+        "value": 100.0
+      },
+      "provider_tool_calls": {
+        "available_runs": 36,
+        "observed_subtotal": 325.0,
+        "valid_runs": 36,
+        "value": 325.0
+      },
+      "strategy_wall_time_ms": {
+        "available_runs": 36,
+        "observed_subtotal": 3726365.3014590964,
+        "valid_runs": 36,
+        "value": 3726365.3014590964
+      },
+      "summed_provider_execution_time_ms": {
+        "available_runs": 36,
+        "observed_subtotal": 3668411.675873853,
+        "valid_runs": 36,
+        "value": 3668411.675873853
+      },
+      "task_wall_time_ms": {
+        "available_runs": 36,
+        "observed_subtotal": 3748014.193125011,
+        "valid_runs": 36,
+        "value": 3748014.193125011
+      },
+      "total_tokens": {
+        "available_runs": 25,
+        "observed_subtotal": 3816720.0,
+        "valid_runs": 36,
+        "value": null
+      }
+    },
+    "valid_runs": 36
+  }
+}

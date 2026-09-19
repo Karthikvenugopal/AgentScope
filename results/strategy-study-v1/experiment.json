@@ -1,0 +1,205 @@
+{
+  "benchmark_manifest_hash": "132a2070b12f143d889a2b88af200063800194162835bbdd3eea01aef8f38f80",
+  "benchmark_name": "AgentScope Benchmark",
+  "benchmark_version": "0.1",
+  "configurations": [
+    {
+      "configuration": {
+        "id": "parallel2-codex",
+        "implementer": "codex",
+        "implementer_count": 2,
+        "model": null,
+        "planner": "codex",
+        "provider": "codex",
+        "reviewer": "codex",
+        "strategy": "parallel_implementers"
+      },
+      "configuration_id": "parallel2-codex",
+      "experiment_id": "strategy-study-v1",
+      "provider": "codex",
+      "strategy": "parallel_implementers"
+    },
+    {
+      "configuration": {
+        "id": "single-codex",
+        "implementer": null,
+        "implementer_count": null,
+        "model": null,
+        "planner": null,
+        "provider": "codex",
+        "reviewer": null,
+        "strategy": "single"
+      },
+      "configuration_id": "single-codex",
+      "experiment_id": "strategy-study-v1",
+      "provider": "codex",
+      "strategy": "single"
+    },
+    {
+      "configuration": {
+        "id": "staged-codex",
+        "implementer": "codex",
+        "implementer_count": null,
+        "model": null,
+        "planner": "codex",
+        "provider": "codex",
+        "reviewer": "codex",
+        "strategy": "planner_implementer_reviewer"
+      },
+      "configuration_id": "staged-codex",
+      "experiment_id": "strategy-study-v1",
+      "provider": "codex",
+      "strategy": "planner_implementer_reviewer"
+    }
+  ],
+  "created_at": "2026-09-18T22:15:00+00:00",
+  "experiment_id": "strategy-study-v1",
+  "finished_at": "2026-09-19T14:23:13.766036+00:00",
+  "name": "Controlled orchestration strategy study v1",
+  "pause_reason": null,
+  "progress": {
+    "benchmark_failures": 57,
+    "benchmark_successes": 51,
+    "completed": 108,
+    "infrastructure_failures": 1,
+    "pending": 0,
+    "planned": 108,
+    "protocol_exclusions": 2,
+    "running": 0
+  },
+  "provenance": {
+    "agentscope_commit": null,
+    "agentscope_version": "0.9.0",
+    "benchmark_manifest_hash": "132a2070b12f143d889a2b88af200063800194162835bbdd3eea01aef8f38f80",
+    "benchmark_name": "AgentScope Benchmark",
+    "benchmark_version": "0.1",
+    "experiment_spec_hash": "bd84864140363cb6431f73118cf20f18f7ca6d4dbeccad3e05e310e1d826bf56",
+    "provider_image": "agentscope-providers:codex-0.154.0-claude-2.1.220",
+    "provider_image_id": "sha256:3f740c9524d9b3e4d65ea33a19d234b65c313841af6453ece2be7eef00f221c2",
+    "provider_versions": {
+      "codex": {
+        "available": true,
+        "capabilities": {
+          "model_request_boundaries": false,
+          "model_selection": true,
+          "per_request_usage": false,
+          "session_continuation": true,
+          "session_ids": true,
+          "streaming_events": true,
+          "structured_output": true,
+          "token_stream_timestamps": false,
+          "token_usage": true,
+          "tool_events": true
+        },
+        "id": "codex",
+        "reason": null,
+        "version": "codex-cli 0.154.0"
+      }
+    },
+    "runner_image": "agentscope-runner:py312",
+    "runner_image_id": "sha256:bf0d26dc5f789a36fda4dcc9daa046d524d168b8e22282c2b8e735edff6ebe24",
+    "strategy_implementation_hash": "1c80ad326619127099c8089f9fcb14411d143626bc59900cfb39231d3b60d5b4",
+    "task_count": 12,
+    "task_hashes": {
+      "bounded_retry": "07df7bf97affa23de0836be277033ea144f0a33019d55b121ee1eced33d6c5ee",
+      "cache_invalidation": "4fd7bda60b5e613ae0e051f3c89bc5149654f540f4ae9cd4cc1bf69dccd9f5c5",
+      "cross_file_permissions": "42ec0f0ae627fc1961d0755b867686168fe5b82676f41021ba1383e79f3bd84a",
+      "cursor_pagination": "7f5f17e2020cd785ea13680f0b7a00723673a15711ef48bb0e78a94453e996e1",
+      "extract_transport_refactor": "fb5471ea2eedef2075f5dfe369eb2b5d5499d64aa62c1bdffb3461cbe34218a1",
+      "incorrect_api_response": "788098aa3138b2b1bde0a18b76c24bd1532fbf9094a00d9531febdf14e366484",
+      "js_batch_dedupe": "8cfb36ae7df7a1f70ccef366325bd5f1d4b5f47923bf0723ebaeb315429692c4",
+      "js_ttl_cache": "966473e72f33f23327f057c74f92505251198d0e778d5cfa9eafb490465e8838",
+      "lock_inventory": "40526b74c064f80285d25040485e52dba69ee67c390ac7d838e354410ae96fc2",
+      "request_validation": "4e53c4a13eefb982d725949f209a9aa3a3347636eaf715078e1789f4fa08844b",
+      "resource_cleanup": "ac9ea2f194413d81893ac5472b25e3f6f0db81a3bf44a9229bfbab2b085ba599",
+      "transaction_transition": "6f3bd5580f025e34d84c97039c3d755c45e6d97843547fd81d47f933cd0d2e35"
+    }
+  },
+  "random_seed": 20260918,
+  "research_question": "How does coding-agent orchestration strategy affect correctness and inference workload when provider, benchmark, and environment are held constant?",
+  "spec": {
+    "benchmark_manifest_hash": "132a2070b12f143d889a2b88af200063800194162835bbdd3eea01aef8f38f80",
+    "benchmark_name": "AgentScope Benchmark",
+    "benchmark_version": "0.1",
+    "bootstrap_seed": 20260919,
+    "budget": {
+      "max_estimated_cost": null,
+      "max_provider_invocations": 324,
+      "max_tokens": 50000000,
+      "max_total_runs": 108
+    },
+    "configurations": [
+      {
+        "id": "single-codex",
+        "implementer": null,
+        "implementer_count": null,
+        "model": null,
+        "planner": null,
+        "provider": "codex",
+        "reviewer": null,
+        "strategy": "single"
+      },
+      {
+        "id": "staged-codex",
+        "implementer": "codex",
+        "implementer_count": null,
+        "model": null,
+        "planner": "codex",
+        "provider": "codex",
+        "reviewer": "codex",
+        "strategy": "planner_implementer_reviewer"
+      },
+      {
+        "id": "parallel2-codex",
+        "implementer": "codex",
+        "implementer_count": 2,
+        "model": null,
+        "planner": "codex",
+        "provider": "codex",
+        "reviewer": "codex",
+        "strategy": "parallel_implementers"
+      }
+    ],
+    "created_at": "2026-09-18T15:15:00-07:00",
+    "execution_order": "stratified_random",
+    "experiment_id": "strategy-study-v1",
+    "experiment_run_concurrency": 1,
+    "infrastructure_backoff_seconds": 10.0,
+    "infrastructure_retry_limit": 2,
+    "limits": {
+      "command_timeout_seconds": 120.0,
+      "max_agent_turns": 20,
+      "max_captured_output_bytes": 1000000,
+      "max_file_write_bytes": 1000000,
+      "max_tool_calls": 100,
+      "overall_timeout_seconds": 900.0
+    },
+    "name": "Controlled orchestration strategy study v1",
+    "notes": "Primary causal comparison. The same Codex provider is used in every role.",
+    "pricing": null,
+    "provider_requirements": [
+      "codex"
+    ],
+    "random_seed": 20260918,
+    "repetitions": 3,
+    "research_question": "How does coding-agent orchestration strategy affect correctness and inference workload when provider, benchmark, and environment are held constant?",
+    "schema_version": "1",
+    "task_ids": [
+      "bounded_retry",
+      "cache_invalidation",
+      "cross_file_permissions",
+      "cursor_pagination",
+      "extract_transport_refactor",
+      "incorrect_api_response",
+      "js_batch_dedupe",
+      "js_ttl_cache",
+      "lock_inventory",
+      "request_validation",
+      "resource_cleanup",
+      "transaction_transition"
+    ]
+  },
+  "spec_hash": "bd84864140363cb6431f73118cf20f18f7ca6d4dbeccad3e05e310e1d826bf56",
+  "started_at": "2026-09-18T23:06:44.296521+00:00",
+  "status": "completed"
+}

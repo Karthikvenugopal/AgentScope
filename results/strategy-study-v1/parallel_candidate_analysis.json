@@ -1,0 +1,17 @@
+{
+  "candidate_failures": 3,
+  "candidate_patch_bytes": {
+    "mean": 850.1029411764706,
+    "median": 702.0,
+    "p25": 527.0,
+    "p75": 1113.75
+  },
+  "limitation": "Unselected candidates are never officially verified.",
+  "mean_candidate_count": 1.7222222222222223,
+  "runs": 36,
+  "selection_distribution": {
+    "A": 18,
+    "B": 6
+  },
+  "unselected_official_verification": null
+}

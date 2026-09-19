@@ -1,0 +1,116 @@
+{
+  "parallel2-codex_minus_single-codex": {
+    "official_success": {
+      "bootstrap_95_ci": [
+        -0.3055555555555556,
+        -0.05555555555555556
+      ],
+      "mean_difference": -0.16666666666666666,
+      "median_difference": 0.0,
+      "paired_task_count": 12
+    },
+    "provider_tool_calls": {
+      "bootstrap_95_ci": [
+        6.694444444444444,
+        9.5
+      ],
+      "mean_difference": 8.13888888888889,
+      "median_difference": 8.5,
+      "paired_task_count": 12
+    },
+    "task_wall_time_ms": {
+      "bootstrap_95_ci": [
+        42775.6229715702,
+        71507.59161691877
+      ],
+      "mean_difference": 56308.96981463431,
+      "median_difference": 59146.77634019365,
+      "paired_task_count": 12
+    },
+    "total_tokens": {
+      "bootstrap_95_ci": [
+        129948.57651515151,
+        164703.38484848486
+      ],
+      "mean_difference": 146000.9090909091,
+      "median_difference": 148432.33333333334,
+      "paired_task_count": 11
+    }
+  },
+  "parallel2-codex_minus_staged-codex": {
+    "official_success": {
+      "bootstrap_95_ci": [
+        -0.08333333333333333,
+        0.08333333333333333
+      ],
+      "mean_difference": -4.625929269271485e-18,
+      "median_difference": 0.0,
+      "paired_task_count": 12
+    },
+    "provider_tool_calls": {
+      "bootstrap_95_ci": [
+        3.3611111111111107,
+        6.277777777777778
+      ],
+      "mean_difference": 4.833333333333333,
+      "median_difference": 4.666666666666667,
+      "paired_task_count": 12
+    },
+    "task_wall_time_ms": {
+      "bootstrap_95_ci": [
+        -7410.749451581756,
+        16809.344987313452
+      ],
+      "mean_difference": 3400.6515449938056,
+      "median_difference": 661.3367013245188,
+      "paired_task_count": 12
+    },
+    "total_tokens": {
+      "bootstrap_95_ci": [
+        59022.45454545455,
+        84321.4068181818
+      ],
+      "mean_difference": 71319.90909090909,
+      "median_difference": 67434.0,
+      "paired_task_count": 11
+    }
+  },
+  "single-codex_minus_staged-codex": {
+    "official_success": {
+      "bootstrap_95_ci": [
+        0.02777777777777778,
+        0.3333333333333333
+      ],
+      "mean_difference": 0.16666666666666666,
+      "median_difference": 0.0,
+      "paired_task_count": 12
+    },
+    "provider_tool_calls": {
+      "bootstrap_95_ci": [
+        -4.277777777777778,
+        -2.2777777777777777
+      ],
+      "mean_difference": -3.3055555555555554,
+      "median_difference": -3.5,
+      "paired_task_count": 12
+    },
+    "task_wall_time_ms": {
+      "bootstrap_95_ci": [
+        -60998.8283409866,
+        -43802.88373957689
+      ],
+      "mean_difference": -52908.318269640506,
+      "median_difference": -56505.232500184014,
+      "paired_task_count": 12
+    },
+    "total_tokens": {
+      "bootstrap_95_ci": [
+        -82541.10694444444,
+        -54974.14791666667
+      ],
+      "mean_difference": -69415.76388888889,
+      "median_difference": -73182.5,
+      "paired_task_count": 12
+    }
+  }
+}
